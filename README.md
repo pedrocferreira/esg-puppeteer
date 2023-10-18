@@ -1,4 +1,4 @@
-Claro! Vou formatar o resumo para que fique apropriado para um arquivo `README.md`:
+
 
 ---
 
@@ -33,4 +33,3 @@ O principal objetivo deste script é garantir uma coleta eficiente de dados de u
 
 ---
 
-Você pode copiar e colar esse conteúdo em seu `README.md` e fazer quaisquer ajustes adicionais conforme necessário!
