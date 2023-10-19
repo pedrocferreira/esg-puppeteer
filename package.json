@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mysql": "^2.18.1",
     "mysql2": "^3.6.2",
     "puppeteer": "^21.3.8"
   }
