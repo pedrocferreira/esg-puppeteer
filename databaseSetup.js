@@ -22,10 +22,35 @@ function createCompactGlobal() {
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        console.log('Tabela artigos criada ou já existente.');
+        console.log('Tabela globalcompact criada ou já existente.');
+    });
+}
+function createSseData() {
+    const sql = `
+        CREATE TABLE IF NOT EXISTS sse_data (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            imageUrl TEXT,
+            imageTitle VARCHAR(255),
+            country VARCHAR(255),
+            linkText VARCHAR(255),
+            linkUrl TEXT,
+            title VARCHAR(255),
+            subTitle VARCHAR(255),
+            contentText TEXT,
+            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    `;
+
+    db.query(sql, (err, result) => {
+        if (err) throw err;
+        console.log('Tabela sse_data criada ou já existente.');
     });
 }
 
+
+
+
 module.exports = {
-    createCompactGlobal
+    createCompactGlobal,
+    createSseData
 };
