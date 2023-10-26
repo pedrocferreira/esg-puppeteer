@@ -1,61 +1,58 @@
-# Script de Extração e Armazenamento de Dados
+# Data Extraction and Storage Script
 
-Este script automatiza o processo de coleta de dados de uma página da web e os armazena em um banco de dados MySQL.
+This script automates the process of data collection from a web page and stores it in a MySQL database.
 
-## Funcionalidades
+## Features
 
-1. **Navegação Web com Puppeteer**:
-   - Utiliza a biblioteca `Puppeteer` para abrir um navegador em modo headless.
-   - Navega até a página 'https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/'.
+1. **Web Navigation with Puppeteer**:
+   - Utilizes the `Puppeteer` library to open a browser in headless mode.
+   - Navigates to the page 'https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/'.
 
-2. **Extração de Dados da Tabela**:
-   - Identifica e extrai informações de uma tabela na página.
-   - Organiza os dados em uma matriz representando as linhas e colunas da tabela.
+2. **Data Extraction from Table**:
+   - Identifies and extracts information from a table on the page.
+   - Organizes the data into a matrix representing the rows and columns of the table.
 
-3. **Conexão com Banco de Dados MySQL**:
-   - Estabelece conexão com um banco de dados MySQL local chamado 'esg' usando a biblioteca `mysql2`.
+3. **Connection to MySQL Database**:
+   - Establishes a connection to a local MySQL database named 'esg' using the `mysql2` library.
 
-4. **Verificação e Inserção de Dados**:
-   - Para cada linha extraída, verifica se os dados já existem na tabela 'regask' do banco de dados.
-   - Se os dados não existirem, insere-os na tabela com a data e hora atual.
+4. **Data Verification and Insertion**:
+   - For each extracted row, it checks if the data already exists in the 'regask' table of the database.
+   - If the data does not exist, it inserts them into the table with the current date and time.
 
-5. **Finalização**:
-   - Após processar e inserir todos os dados, o script encerra a conexão com o banco de dados.
-   - Exibe uma mensagem de confirmação indicando que os dados foram inseridos com sucesso.
+5. **Finalization**:
+   - After processing and inserting all the data, the script ends the connection to the database.
+   - Displays a confirmation message indicating that the data has been successfully inserted.
 
-## Sites de Captura de Dados
+## Data Capture Websites
 
-A lista a seguir contém os sites que estão sendo usados para capturar dados:
+The list below contains the websites that are being used to capture data:
 
-| Nome | Descrição | Link | Check |
+| Name | Description | Link | Check |
 | --- | --- | --- | --- |
-| Pacto Global da ONU | Biblioteca com várias documentações incluindo políticas | [Link](https://unglobalcompact.org/library/search?search%5Bissue_areas%5D%5B%5D=211&search%5Bkeywords%5D=&search%5Bcontent_type%5D=12) | OK |
-| Moody's | Exemplo de provedor que normaliza através de ferramentas | [Link](https://www.moodys.com/web/en/us/capabilities/esg.html) | no |
-| Bolsa de Valores SSE (ONU) | Mapeamento de regulamentação e aplicação por país | [Link](https://sseinitiative.org/esg-guidance-database/) | Fazendo |
-| Regulamentações da Bolsa de Valores SSE (ONU) | Descrições de várias regulamentações | [Link](https://sseinitiative.org/regulation/) | OK |
-| Plataforma de Finanças Verdes | 780 políticas | [Link](https://www.greenfinanceplatform.org/financial-measures/browse/country/france-284) |  |
-| Global Data | 631 regulamentações | [Link](https://www.globaldata.com/esg/regulations/) |  |
-| Climatiq | Eles mencionam 4000 regulamentações, mas coletaram 30 | [Link](https://www.climatiq.io/blog/database-your-esg-standards-frameworks-and-regulation-overview) |  |
+| UN Global Compact | Library with various documents including policies | [Link](https://unglobalcompact.org/library/search?search%5Bissue_areas%5D%5B%5D=211&search%5Bkeywords%5D=&search%5Bcontent_type%5D=12) | OK |
+| Moody's | Example of a provider normalizing through tools | [Link](https://www.moodys.com/web/en/us/capabilities/esg.html) | No |
+| SSE Stock Exchange (UN) | Mapping of regulation and enforcement by country | [Link](https://sseinitiative.org/esg-guidance-database/) | In Progress |
+| SSE Stock Exchange Regulations (UN) | Descriptions of various regulations | [Link](https://sseinitiative.org/regulation/) | OK |
+| Green Finance Platform | 780 policies | [Link](https://www.greenfinanceplatform.org/financial-measures/browse/country/france-284) |  |
+| Global Data | 631 regulations | [Link](https://www.globaldata.com/esg/regulations/) |  |
+| Climatiq | They mention 4000 regulations, but have collected 30 | [Link](https://www.climatiq.io/blog/database-your-esg-standards-frameworks-and-regulation-overview) |  |
 | Airtable | - | [Link](https://airtable.com/appzfiUwVci5GhjlO/shrJethBEwOVaKH5R/tblIbzy1dGWtPjwrO?backgroundColor=blue&viewControls=on) |  |
-| Dados Climatiq | - | [Link](https://www.climatiq.io/data) |  |
-| ESG Clarity | Site com vários artigos, incluindo um sobre regulamentações | [Link](https://esgclarity.com/esg-regulations-around-the-world/) |  |
-| White Case | Uma análise de três principais desenvolvimentos regulatórios na UE e EUA - propostas de Diretivas da UE sobre Diligência e Relatórios de Sustentabilidade Corporativa e Regras de Divulgação de Mudanças Climáticas da SEC dos EUA | [Link](https://www.whitecase.com/insight-alert/global-esg-regulatory-framework-toughens) |  |
-| Regulation Ask | Principais tendências em regulamentações ESG em 2022 e além | [Link](https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/) | OK |
-| WBC FSD | Consórcio de sustentabilidade | [Link](https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/) |  |
-| PRI | Base de dados com 868 regulamentações (links para) | [Link](https://www.unpri.org/policy/regulation-database) |  |
+| Climatiq Data | - | [Link](https://www.climatiq.io/data) |  |
+| ESG Clarity | Website with various articles, including one about regulations | [Link](https://esgclarity.com/esg-regulations-around-the-world/) |  |
+| White Case | An analysis of three major regulatory developments in the EU and US - EU Directive proposals on Due Diligence and Corporate Sustainability Reporting and US SEC Climate Change Disclosure Rules | [Link](https://www.whitecase.com/insight-alert/global-esg-regulatory-framework-toughens) |  |
+| Regulation Ask | Key trends in ESG regulations in 2022 and beyond | [Link](https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/) | OK |
+| WBC FSD | Sustainability consortium | [Link](https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/) |  |
+| PRI | Database with 868 regulations (links to) | [Link](https://www.unpri.org/policy/regulation-database) |  |
 
-## Objetivo
+## Objective
 
-O principal objetivo deste script é garantir uma coleta eficiente de dados de uma tabela na página web e armazená-los no banco de dados, evitando duplicações.
+The main goal of this script is to ensure efficient data collection from a table on the web page and store it in the database, avoiding duplications.
 
 ---
 <<<<<<< HEAD
 
-Anotação:
+Attention:
+I haven't done the part of running all the scripts together in index.js yet, I intend to do this to make it easier to run all the scripts.
+Some scripts are uploading data to the database, others are not yet.
 
-   Estrutura
-   CSV-> pasta onde fica os arquivos CSV gerados
-   Scripts-> Pasta onde fica os scritps que fazem raspagem de dados
-   Index.js-> arquivo para inciar  os scripts
-=======
->>>>>>> c61d1e54b7384acede1b24b7e8bf6c459a6f8983
+I still want to fix many things in this project.
