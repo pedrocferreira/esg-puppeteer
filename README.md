@@ -33,3 +33,9 @@ O principal objetivo deste script é garantir uma coleta eficiente de dados de u
 
 ---
 
+Anotação:
+
+   Estrutura
+   CSV-> pasta onde fica os arquivos CSV gerados
+   Scripts-> Pasta onde fica os scritps que fazem raspagem de dados
+   Index.js-> arquivo para inciar  os scripts

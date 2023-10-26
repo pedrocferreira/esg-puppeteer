@@ -1,15 +1,14 @@
 const puppeteer = require('puppeteer');
 const mysql = require('mysql2/promise');
+const { createObjectCsvWriter } = require('csv-writer');
+const fs = require('fs');
 
 (async () => {
-    // Iniciar o browser em modo headless
-    const browser = await puppeteer.launch({headless: true});
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
-    // Navegar para a página especificada
     await page.goto('https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/');
 
-    // Extrair os dados da tabela
     const data = await page.evaluate(() => {
         const rows = document.querySelectorAll('table tbody tr');
         return Array.from(rows, row => {
@@ -53,7 +52,24 @@ const mysql = require('mysql2/promise');
         }
     }
 
-    console.log('Dados inseridos com sucesso!');
+    // Consulta para obter os dados inseridos no banco de dados
+    const [results] = await connection.execute('SELECT * FROM regask');
+
+    // Salvar os dados em um arquivo CSV
+    const csvWriter = createObjectCsvWriter({
+        path: 'csv/regask_data.csv',
+        header: [
+            { id: 'Country_or_Region', title: 'Country_or_Region' },
+            { id: 'Regulation', title: 'Regulation' },
+            { id: 'Institution', title: 'Institution' },
+            { id: 'Description', title: 'Description' },
+            { id: 'date', title: 'Date' }
+        ]
+    });
+
+    await csvWriter.writeRecords(results);
+
+    console.log('Dados inseridos no banco de dados e arquivo CSV gerado com sucesso!');
 
     // Fechar a conexão com o banco de dados
     await connection.end();

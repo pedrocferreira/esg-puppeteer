@@ -1,8 +1,10 @@
 const puppeteer = require('puppeteer');
 const mysql = require('mysql');
-const { createSseData } = require('./databaseSetup'); // Importar a função para criar a tabela
+const { createSseData } = require('./database/databaseSetup');
 
-// Configuração da conexão com o banco de dados
+const { createObjectCsvWriter } = require('csv-writer');
+const fs = require('fs');
+
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -13,13 +15,12 @@ const connection = mysql.createConnection({
 connection.connect();
 
 (async () => {
-    // Criar a tabela sse_data se ela não existir
     createSseData();
 
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
 
-    await page.goto('https://sseinitiative.org/regulation/');
+    await page.goto('https://sseinitiative.org/regulation');
 
     const data = await page.$$eval('.cstm-db-rslts-list-item .et_builder_inner_content', elements => {
         return elements.map(element => {
@@ -36,6 +37,8 @@ connection.connect();
             };
         });
     });
+
+    const allData = [];
 
     for (let countryData of data) {
         await page.goto(countryData.linkUrl);
@@ -54,18 +57,30 @@ connection.connect();
 
         Object.assign(countryData, details);
 
-        // Inserir os dados no banco de dados
-        const sql = 'INSERT INTO sse_data (imageUrl, imageTitle, country, linkText, linkUrl, title, subTitle, contentText) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-        connection.query(sql, [countryData.imageUrl, countryData.imageTitle, countryData.country, countryData.linkText, countryData.linkUrl, countryData.title, countryData.subTitle, countryData.contentText], (error, results, fields) => {
-            if (error) throw error;
-            console.log('Dados inseridos com o ID:', results.insertId);
-        });
+        allData.push(countryData);
     }
 
     await browser.close();
 
+    // Escrever todos os dados no arquivo CSV na pasta "CSV/"
+    const csvWriter = createObjectCsvWriter({
+        path: 'csv/sseinitiative.csv', // Caminho para a pasta CSV/
+        header: [
+            { id: 'imageUrl', title: 'Image URL' },
+            { id: 'imageTitle', title: 'Image Title' },
+            { id: 'country', title: 'Country' },
+            { id: 'linkText', title: 'Link Text' },
+            { id: 'linkUrl', title: 'Link URL' },
+            { id: 'title', title: 'Title' },
+            { id: 'subTitle', title: 'Sub Title' },
+            { id: 'contentText', title: 'Content Text' }
+        ]
+    });
+
+    await csvWriter.writeRecords(allData);
+
     // Fechar a conexão com o banco de dados após inserir todos os dados
     connection.end();
 
-    console.log("Processo concluído!");
+    console.log("Processo concluído e arquivo CSV gerado na pasta 'CSV/'.");
 })();

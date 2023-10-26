@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const mysql = require('mysql');
-const dbSetup = require('./databaseSetup');
+const dbSetup = require('./database/databaseSetup');
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 // Configuração da conexão com o banco de dados
 const db = mysql.createConnection({
@@ -17,12 +18,25 @@ db.connect((err) => {
     console.log('Conectado ao banco de dados');
 });
 
+// Configura o escritor CSV
+const csvWriter = createCsvWriter({
+    path: 'csv/compactGlobal.csv', // Nome do arquivo CSV de saída
+    header: [
+        { id: 'title', title: 'Title' },
+        { id: 'description', title: 'Description' },
+        { id: 'imageUrl', title: 'ImageUrl' },
+        { id: 'link', title: 'Link' },
+        { id: 'date', title: 'Date' },
+        { id: 'type', title: 'Type' }
+    ]
+});
+
 async function scrapeAndInsert(pageNumber) {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     // Abra a URL desejada com base no número da página
-    await page.goto(`https://unglobalcompact.org/library/search?page=${pageNumber}&search%5Bcontent_type%5D=12&search%5Bissue_areas%5D%5B%5D=211&search%5Bkeywords%5D=`,{waitUntil: 'networkidle0'});
+    await page.goto(`https://unglobalcompact.org/library/search?page=${pageNumber}&search%5Bcontent_type%5D=12&search%5Bissue_areas%5D%5B%5D=211&search%5Bkeywords%5D=`, { waitUntil: 'networkidle0' });
 
     // Raspando os dados
     const articles = await page.$$eval('.library-component-content-block', nodes => {
@@ -48,10 +62,19 @@ async function scrapeAndInsert(pageNumber) {
             console.log(`Artigo ${article.title} inserido no banco de dados.`);
         });
     });
+
+    // Escreva os dados no arquivo CSV
+    csvWriter.writeRecords(articles)
+        .then(() => {
+            console.log('Dados escritos no arquivo CSV.');
+        })
+        .catch(err => {
+            console.error('Erro ao escrever no arquivo CSV:', err);
+        });
 }
 
 // Execute a função para todas as páginas de 1 a 22
-(async function() {
+(async function () {
     for (let i = 1; i <= 22; i++) {
         await scrapeAndInsert(i);
     }
