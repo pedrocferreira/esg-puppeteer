@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const robot = require('robotjs');
 
-async function clickShortOption() {
+async function clickShortOptionAndExtractLinks() {
   const browser = await puppeteer.launch({ headless: false, defaultViewport: null, args: ['--start-maximized'] });
   const page = await browser.newPage();
 
@@ -43,10 +43,58 @@ async function clickShortOption() {
   });
 
   // Aguarde para ver os resultados
+  await page.waitForTimeout(2000);
+
+  // Extrair todos os hrefs
+  const links = await page.evaluate(() => {
+    const elements = document.querySelectorAll('.dataRow.leftPane.rowExpansionEnabled.rowSelectionEnabled a');
+    return Array.from(elements).map(el => el.href);
+  });
+
+  console.log(links);
+
+  for (const link of links) {
+    console.log(`Navegando para ${link}`);
+    await page.goto(link, { waitUntil: 'networkidle0' });
+
+    // Extrair os dados
+    const data = await page.evaluate(() => {
+      const results = [];
+      const detailView = document.querySelector('.detailView');
+      if (detailView) {
+        const labelCellPairs = detailView.querySelectorAll('.labelCellPair');
+        labelCellPairs.forEach(pair => {
+          const label = pair.querySelector('.fieldLabel')?.textContent.trim();
+          let value;
+    
+          if (label) {
+            if (label.includes('# of companies') || label.includes('Description')) {
+              value = pair.querySelector('.contentEditableTextbox')?.textContent.trim();
+            } else {
+              value = pair.querySelector('[data-testid="cell-editor"]')?.textContent.trim();
+            }
+            
+            results.push({ label, value });
+          }
+        });
+      }
+      return results;
+    });
+    console.log(data);
+    
+
+    console.log(data);
+
+    // Aguarde para ver os resultados (ajuste o tempo conforme necessário)
+    await page.waitForTimeout(2000);
+}
+
+
+  // Aguarde para ver os resultados
   await page.waitForTimeout(5000);
 
   // Feche o navegador
   //await browser.close();
 }
 
-clickShortOption();
+clickShortOptionAndExtractLinks();
