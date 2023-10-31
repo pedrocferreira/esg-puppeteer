@@ -1,77 +1,52 @@
 const puppeteer = require('puppeteer');
+const robot = require('robotjs');
 
-async function scrapeData() {
-  try {
-    const browser = await puppeteer.launch({ headless: false });
-    const page = await browser.newPage();
-    await page.setViewport({ width: 1920, height: 1080 }); 
-    await page.goto('https://www.climatiq.io/blog/database-your-esg-standards-frameworks-and-regulation-overview', { waitUntil: 'networkidle0' });
+async function clickShortOption() {
+  const browser = await puppeteer.launch({ headless: false, defaultViewport: null, args: ['--start-maximized'] });
+  const page = await browser.newPage();
 
-    // Função de scroll automático
-    await autoScroll(page);
+  await page.goto('https://airtable.com/appzfiUwVci5GhjlO/shrJethBEwOVaKH5R/tblIbzy1dGWtPjwrO', { waitUntil: 'networkidle0' });
 
-    // Esperar por um elemento específico
-    await page.waitForSelector('.dataRow');
+  // Aguarde para garantir que a página tenha sido carregada
+  await page.waitForTimeout(2000);
 
-    // Raspagem dos cabeçalhos da tabela
-    const headers = await page.evaluate(() => {
-      const headers = [];
-      document.querySelectorAll('.contentWrapper').forEach((header) => {
-        headers.push(header.innerText.trim());
-      });
-      return headers;
-    });
+  // Certifique-se de que o navegador está em foco
+  await page.bringToFront();
 
-    console.log(headers);
+  // Aguarde para garantir que o navegador esteja em foco
+  await new Promise(resolve => setTimeout(resolve, 2000));
 
-    // Raspagem dos dados da tabela
-    const data = await page.evaluate(() => {
-      const scrapedData = [];
-      const rows = document.querySelectorAll('.dataRow');
-      rows.forEach(row => {
-        const rowData = {};
-        const cells = row.querySelectorAll('.cell.primary.read');
-
-        rowData.name = cells[0] ? cells[0].innerText.trim() : null;
-        rowData.regionsCovered = cells[1] ? cells[1].innerText.trim() : null;
-        rowData.type = cells[2] ? cells[2].innerText.trim() : null;
-        rowData.numberOfCompanies = cells[3] ? cells[3].innerText.trim() : null;
-        rowData.scope3 = cells[4] ? cells[4].innerText.trim() : null;
-        rowData.mandatory = cells[5] ? cells[5].innerText.trim() : null;
-        rowData.url = cells[6] ? cells[6].innerText.trim() : null;
-        rowData.description = cells[7] ? cells[7].innerText.trim() : null;
-
-        scrapedData.push(rowData);
-      });
-
-      return scrapedData;
-    });
-
-    console.log(data);
-
-    await browser.close();
-  } catch (error) {
-    console.error("Error: ", error);
+  // Reduzir o zoom para 50% (Ctrl -) cinco vezes
+  for (let i = 0; i < 5; i++) {
+    robot.keyTap('-', 'control');
+    await new Promise(resolve => setTimeout(resolve, 500)); // Aguarde 500ms entre cada iteração
   }
-}
 
-async function autoScroll(page){
-    await page.evaluate(async () => {
-        await new Promise((resolve, reject) => {
-            var totalHeight = 0;
-            var distance = 100;
-            var timer = setInterval(() => {
-                var scrollHeight = document.body.scrollHeight;
-                window.scrollBy(0, distance);
-                totalHeight += distance;
+  // Seletor para o botão que abre a lista desdobrável
+  const dropdownButtonSelector = '[aria-label="Row height"]';
 
-                if (totalHeight >= scrollHeight){
-                    clearInterval(timer);
-                    resolve();
-                }
-            }, 100);
-        });
+  // Esperar pelo botão estar visível e clicável
+  const dropdownButton = await page.waitForSelector(dropdownButtonSelector, { visible: true });
+  await dropdownButton.click();
+
+  // Aguarde um momento para a lista desdobrável ser exibida
+  await page.waitForTimeout(500);
+
+  // Encontre e clique na opção "Short"
+  await page.evaluate(() => {
+    const menuItems = document.querySelectorAll('li[role="menuitem"]');
+    menuItems.forEach(item => {
+      if (item.textContent.includes('Short')) {
+        item.click();
+      }
     });
+  });
+
+  // Aguarde para ver os resultados
+  await page.waitForTimeout(5000);
+
+  // Feche o navegador
+  await browser.close();
 }
 
-scrapeData();
+clickShortOption();
