@@ -46,7 +46,7 @@ async function clickShortOption() {
   await page.waitForTimeout(5000);
 
   // Feche o navegador
-  await browser.close();
+  //await browser.close();
 }
 
 clickShortOption();
