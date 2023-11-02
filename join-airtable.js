@@ -2,6 +2,9 @@ import fs from 'fs';
 import Papa from 'papaparse';
 import chalk from 'chalk';
 
+const inputPath = 'csv/airtable.csv';
+const outputPath = 'csv-main/output.csv';
+
 function logSuccess(message) {
   console.log(chalk.green('✓ ' + message));
 }
@@ -28,23 +31,37 @@ function extractDomain(url) {
 }
 
 async function readCsv(filePath) {
-  const data = fs.readFileSync(filePath, 'utf8');
-  return new Promise((resolve) => {
-    Papa.parse(data, {
-      header: true,
-      complete: (results) => resolve(results.data)
+  try {
+    if (!fs.existsSync(filePath)) {
+      logInfo(`O arquivo ${filePath} não existe. Um arquivo vazio será criado.`);
+      writeCsv(filePath, []);
+    }
+    const data = fs.readFileSync(filePath, 'utf8');
+    return new Promise((resolve) => {
+      Papa.parse(data, {
+        header: true,
+        complete: (results) => resolve(results.data)
+      });
     });
-  });
+  } catch (err) {
+    logError(`Erro ao ler o arquivo CSV: ${err.message}`);
+    throw err;
+  }
 }
 
 async function writeCsv(filePath, data) {
-  const csv = Papa.unparse(data);
-  fs.writeFileSync(filePath, csv, 'utf8');
+  try {
+    const csv = Papa.unparse(data, { header: true });
+    fs.writeFileSync(filePath, csv, 'utf8');
+  } catch (err) {
+    logError(`Erro ao escrever o arquivo CSV: ${err.message}`);
+    throw err;
+  }
 }
 
 async function mapAndSaveCsv() {
   logInfo('Lendo dados do arquivo CSV de entrada...');
-  const inputData = await readCsv('csv/airtable.csv');
+  const inputData = await readCsv(inputPath);
   logSuccess('Dados lidos com sucesso!');
 
   logInfo('Mapeando dados para o novo formato...');
@@ -71,11 +88,10 @@ async function mapAndSaveCsv() {
   logSuccess('Dados mapeados com sucesso!');
 
   logInfo('Salvando dados no arquivo CSV de saída...');
-  await writeCsv('csv-main/output.csv', outputData);
+  await writeCsv(outputPath, outputData);
   logSuccess('Arquivo CSV de saída criado com sucesso!');
 }
 
 mapAndSaveCsv().catch(err => logError('Ocorreu um erro: ' + err.message));
-
 
 export default mapAndSaveCsv;
