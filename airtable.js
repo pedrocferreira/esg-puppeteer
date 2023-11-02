@@ -90,4 +90,4 @@ async function clickShortOptionAndExtractLinks() {
   }
 }
 
-clickShortOptionAndExtractLinks();
+export default clickShortOptionAndExtractLinks;

@@ -1,76 +1,62 @@
-const puppeteer = require('puppeteer');
-const mysql = require('mysql2/promise');
-const { createObjectCsvWriter } = require('csv-writer');
-const fs = require('fs');
+import puppeteer from 'puppeteer';
+import { createObjectCsvWriter } from 'csv-writer';
+import chalk from 'chalk';
 
-(async () => {
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
+async function scrapeData() {
+  console.log(chalk.blue('Iniciando o navegador...'));
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
 
-    await page.goto('https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/');
+  console.log(chalk.blue('Acessando a página...'));
+  await page.goto('https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/');
 
-    const data = await page.evaluate(() => {
-        const rows = document.querySelectorAll('table tbody tr');
-        return Array.from(rows, row => {
-            const columns = row.querySelectorAll('td, th');
-            return Array.from(columns, column => column.innerText.trim());
-        });
+  console.log(chalk.blue('Extraindo os dados...'));
+  const data = await page.evaluate(() => {
+    const rows = document.querySelectorAll('table tbody tr');
+    return Array.from(rows, row => {
+      const columns = row.querySelectorAll('td, th');
+      return Array.from(columns, column => column.innerText.trim());
     });
+  });
 
-    await browser.close();
+  await browser.close();
+  console.log(chalk.green('Dados extraídos com sucesso!'));
+  return data;
+}
 
-    // Configurações de conexão ao banco de dados
-    const connection = await mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'esg'
-    });
+async function saveToCsv(data) {
+  console.log(chalk.blue('Salvando os dados em um arquivo CSV...'));
+  const csvWriter = createObjectCsvWriter({
+    path: 'csv/regask_data.csv',
+    header: [
+      { id: 'Country_or_Region', title: 'Country_or_Region' },
+      { id: 'Regulation', title: 'Regulation' },
+      { id: 'Institution', title: 'Institution' },
+      { id: 'Description', title: 'Description' },
+      { id: 'date', title: 'Date' }
+    ]
+  });
 
-    // Ignorar o cabeçalho (primeira linha) e inserir os dados na tabela MySQL
-    for (let i = 1; i < data.length; i++) {
-        const item = data[i];
+  const records = data.slice(1).map(row => ({
+    Country_or_Region: row[0] || null,
+    Regulation: row[1] || null,
+    Institution: row[2] || null,
+    Description: row[3] || null,
+    date: new Date().toISOString().slice(0, 19).replace('T', ' ')
+  }));
 
-        // Verificar se o registro já existe
-        const [rows] = await connection.execute(
-            'SELECT * FROM regask WHERE Country_or_Region = ? AND Regulation = ? AND Institution = ? AND Description = ?',
-            [item[0], item[1], item[2], item[3]]
-        );
+  await csvWriter.writeRecords(records);
+  console.log(chalk.green('Dados salvos no arquivo CSV com sucesso!'));
+}
 
-        // Se não existir, inserir no banco de dados
-        if (rows.length === 0) {
-            await connection.execute(
-                'INSERT INTO regask (Country_or_Region, Regulation, Institution, Description, date) VALUES (?, ?, ?, ?, ?)',
-                [
-                    item[0] || null,
-                    item[1] || null,
-                    item[2] || null,
-                    item[3] || null,
-                    new Date().toISOString().slice(0, 19).replace('T', ' ')  // Formato YYYY-MM-DD HH:MM:SS
-                ]
-            );
-        }
-    }
+async function main() {
+  try {
+    const data = await scrapeData();
+    await saveToCsv(data);
+    console.log(chalk.green('Processo concluído com sucesso!'));
+  } catch (err) {
+    console.error(chalk.red('Ocorreu um erro:'), err);
+  }
+}
 
-    // Consulta para obter os dados inseridos no banco de dados
-    const [results] = await connection.execute('SELECT * FROM regask');
-
-    // Salvar os dados em um arquivo CSV
-    const csvWriter = createObjectCsvWriter({
-        path: 'csv/regask_data.csv',
-        header: [
-            { id: 'Country_or_Region', title: 'Country_or_Region' },
-            { id: 'Regulation', title: 'Regulation' },
-            { id: 'Institution', title: 'Institution' },
-            { id: 'Description', title: 'Description' },
-            { id: 'date', title: 'Date' }
-        ]
-    });
-
-    await csvWriter.writeRecords(results);
-
-    console.log('Dados inseridos no banco de dados e arquivo CSV gerado com sucesso!');
-
-    // Fechar a conexão com o banco de dados
-    await connection.end();
-})();
+export default main;

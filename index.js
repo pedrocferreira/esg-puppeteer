@@ -1,52 +1,30 @@
-const puppeteer = require('puppeteer');
-const { setupDatabase, insertDataIntoDatabase } = require('./database/databaseSetup');
+import runRagask from './regask.js';
+import runAirtable from './airtable.js';
+import runJoinAirtable from './join-airtable.js';
+import runJoinRegask from './join-regask.js';
 
-// Função para executar um script Puppeteer e inserir os dados no banco de dados
-async function runPuppeteerScript(scriptFunction) {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
+async function runAllScripts() {
+    try {
+        console.log('Iniciando script regask...');
+        await runRagask();
+        console.log('Script regask concluído.');
 
-  // Execute o script Puppeteer específico
-  const data = await scriptFunction(page);
+        console.log('Iniciando script airtable...');
+        await runAirtable();
+        console.log('Script airtable concluído.');
 
-  // Extraia os dados do Puppeteer e insira no banco de dados
-  await insertDataIntoDatabase(data);
+        console.log('Iniciando script join-airtable...');
+        await runJoinAirtable();
+        console.log('Script join-airtable concluído.');
 
-  await browser.close();
+        console.log('Iniciando script join-regask...');
+        await runJoinRegask();
+        console.log('Script join-regask concluído.');
+
+        console.log('Todos os scripts foram executados com sucesso!');
+    } catch (err) {
+        console.error('Ocorreu um erro durante a execução dos scripts:', err);
+    }
 }
 
-// Coordenar as ações com base nos argumentos de linha de comando
-const args = process.argv.slice(2);
-
-if (args.length === 0) {
-  console.error('Você deve fornecer um argumento para especificar o script a ser executado ou "setup" para configurar o banco de dados.');
-  process.exit(1);
-}
-
-const command = args[0];
-
-if (command === 'setup') {
-  setupDatabase().then(() => {
-    console.log('Banco de dados configurado com sucesso.');
-  }).catch((error) => {
-    console.error('Erro ao configurar o banco de dados:', error);
-  });
-} else {
-  if (!command.endsWith('.js')) {
-    console.error('O argumento deve ser um nome de arquivo válido para um script Puppeteer.');
-    process.exit(1);
-  }
-
-  // Verifique se o script específico está exportando a função correta
-  const scriptFunction = require(`./scripts/${command}`);
-  if (typeof scriptFunction !== 'function') {
-    console.error('O script não exporta uma função executável.');
-    process.exit(1);
-  }
-
-  runPuppeteerScript(scriptFunction).then(() => {
-    console.log('Script Puppeteer executado com sucesso e os dados foram inseridos no banco de dados.');
-  }).catch((error) => {
-    console.error('Erro ao executar o script Puppeteer:', error);
-  });
-}
+runAllScripts();
