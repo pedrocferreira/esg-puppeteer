@@ -1,54 +1,68 @@
-# Data Extraction and Storage Script
+# esg-puppeteer
 
-This script automates the process of data collection from various web pages and stores it in a MySQL database. It includes the ability to navigate web pages, extract table data, connect to a MySQL database, verify the existence of data, insert new data, and provide a final report on the process.
 
-## Features
+A brief description of what the project accomplishes and its purpose.
 
-### 1. Web Navigation with Puppeteer
-   - Utilizes the `Puppeteer` library for headless browser navigation.
-   - Navigates to specific web pages, including 'https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/'.
+## Table of Contents
 
-### 2. Data Extraction from Tables
-   - Identifies and extracts table data.
-   - Organizes the data into a matrix format, reflecting the table's rows and columns.
+- [Folder Structure](#folder-structure)
+- [Script Files](#script-files)
+- [Collected Data](#collected-data)
+- [Technologies Used](#technologies-used)
+- [Data Sources](#data-sources)
+- [Getting Started](#getting-started)
 
-### 3. Connection to MySQL Database
-   - Establishes a connection to a local MySQL database named 'esg' using the `mysql2` library.
+## Folder Structure
 
-### 4. Data Verification and Insertion
-   - Checks if the extracted data already exists in the 'regask' table of the database.
-   - If the data is new, it inserts it into the table along with the current date and time.
+- **csv/**: Stores CSV files extracted from various data sources.
+- **csv-main/**: Holds a comprehensive CSV file with all compiled data (currently incomplete).
+- **join/**: Contains scripts to concatenate CSV files.
+- **pdf/**: Directory for downloaded PDFs from data sources (currently only from sseinitiative).
+- **pdf-links/**: Includes CSV files with links to all the sourced PDFs.
 
-### 5. Finalization
-   - Ends the database connection.
-   - Displays a confirmation message indicating successful data insertion.
+## Script Files
 
-## Data Capture Websites
+- **airtable-pdf.js**: Script to extract PDFs from collected Airtable links.
+- **airtable.js**: Collects data from Airtable.
+- **compactGlobal.js**: Gathers data from the UN Global Compact.
+- **greenfinanceplatform-data.js**: Retrieves data from the Green Finance Platform.
+- **index.js**: Executes a sequence of scripts.
+- **ragask.js**: Collects data from RegASK.
+- **sseinitiative.js**: Collects data from sseinitiative.org/regulation.
+- **sseinitiativegui.js**: Gathers data from the sseinitiative.org ESG guidance database.
+- **sseinitiativegui-pdf.js**: Creates a CSV with PDF links extracted from the sseinitiative.org ESG guidance database.
 
-The table below lists the websites from which data is being captured:
+## Collected Data
 
-| Name | Description | Link | Status |
-| --- | --- | --- | --- |
-| UN Global Compact | Library with various documents including policies | [Link](https://unglobalcompact.org/library/search?search%5Bissue_areas%5D%5B%5D=211&search%5Bkeywords%5D=&search%5Bcontent_type%5D=12) | OK |
-| ... | ... | ... | ... |
-| Regulation Ask | Key trends in ESG regulations in 2022 and beyond | [Link](https://regask.com/key-trends-in-esg-regulations-in-2022-and-beyond/) | OK |
+The `csv` and `pdf-links` folders contain the data harvested, including all PDFs extracted from the sseinitiative and Airtable sources.
 
-(Continue the table as needed for each website.)
+## Technologies Used
 
-## Objective
+This project utilizes Puppeteer and RobotJs for automation and scripting. Note: RobotJs requires C++ to be installed on the machine.
 
-The main goal of this script is to streamline and automate the process of data collection and storage, ensuring efficiency, avoiding duplication, and maintaining data integrity.
+## Data Sources
 
-## Running the Scripts
+Data has been extracted from the following sites and organized in the `csv` folder:
 
-To initiate the data extraction and storage process, run `index.js` using Node.js:
+- Airtable
+- UN Global Compact
+- GlobalData
+- RegASK
+- sseinitiative.org/esg-guidance-database/
+- sseinitiative.org/regulation
 
-```sh
-node index.js
+## Getting Started
+
+To set up the project environment:
+
+```bash
+npm install
 ```
 
-This will sequentially execute all the scripts involved in the data extraction and storage process. Currently, the script is set up to scrape data from the Airtable and Regask websites. Please ensure that all necessary dependencies are installed and that your MySQL database is properly configured before running the script.
+Execution
+To execute the project, run:
 
----
-
-**Note**: The `index.js` script is designed to run all the necessary scripts in sequence. However, as of now, some scripts are actively uploading data to the database, while others are still in development. The project is ongoing, and further improvements and additions are planned. Ensure to keep track of the project's progress and update your local repository as needed.
+```bash
+node index.js
+```
+This command will run four scripts for now: sseinitiativegui.js, airtable.js, sseinitiativegui-pdf.js, and airtable-pdf.js.

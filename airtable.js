@@ -1,8 +1,8 @@
-import puppeteer from 'puppeteer';
-import robot from 'robotjs';
+import chalk from 'chalk';
 import fs from 'fs';
 import Papa from 'papaparse';
-import chalk from 'chalk';
+import puppeteer from 'puppeteer';
+import robot from 'robotjs';
 
 async function clickShortOptionAndExtractLinks() {
   const browser = await puppeteer.launch({ headless: false, defaultViewport: null, args: ['--start-maximized'] });
