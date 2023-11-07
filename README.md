@@ -56,12 +56,12 @@ To set up the project environment:
 
 ```bash
 npm install
-
+```
 
 Execution
 To execute the project, run:
 
 ```bash
-
 node index.js
+```
 This command will run four scripts for now: sseinitiativegui.js, airtable.js, sseinitiativegui-pdf.js, and airtable-pdf.js.
