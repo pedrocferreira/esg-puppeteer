@@ -1,26 +1,22 @@
-const puppeteer = require('puppeteer');
-const mysql = require('mysql');
-const dbSetup = require('./database/databaseSetup');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+import { createObjectCsvWriter } from 'csv-writer';
+import fs from 'fs';
+import path from 'path';
+import puppeteer from 'puppeteer';
 
-// Configuração da conexão com o banco de dados
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'esg'
-});
-dbSetup.createCompactGlobal();
+// Ensure that the directory for the output CSV and downloads exists
+const __dirname = path.resolve(path.dirname(''));
+const downloadPath = path.resolve(__dirname, 'downloads');
+const csvPath = path.resolve(__dirname, '');
+if (!fs.existsSync(downloadPath)) {
+    fs.mkdirSync(downloadPath);
+}
+if (!fs.existsSync(csvPath)) {
+    fs.mkdirSync(csvPath);
+}
 
-// Conecta ao banco de dados
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Conectado ao banco de dados');
-});
-
-// Configura o escritor CSV
-const csvWriter = createCsvWriter({
-    path: 'csv/compactGlobal.csv', // Nome do arquivo CSV de saída
+// Configure the CSV writer for articles
+const articleCsvWriter = createObjectCsvWriter({
+    path: path.join(csvPath, 'compactGlobal.csv'),
     header: [
         { id: 'title', title: 'Title' },
         { id: 'description', title: 'Description' },
@@ -31,51 +27,62 @@ const csvWriter = createCsvWriter({
     ]
 });
 
-async function scrapeAndInsert(pageNumber) {
-    const browser = await puppeteer.launch({ headless: true });
+// Configure the CSV writer for PDF links
+const pdfCsvWriter = createObjectCsvWriter({
+    path: path.join(csvPath, 'pdf-links/pdfCompactGlobal.csv'),
+    header: [
+        { id: 'title', title: 'Title' },
+        { id: 'pdfLink', title: 'PDF Link' }
+    ]
+});
+
+async function setCookies(page) {
+    const cookieFilePath = path.resolve(__dirname, 'cookies/cookies.json');
+    if (fs.existsSync(cookieFilePath)) {
+      const cookiesString = fs.readFileSync(cookieFilePath);
+      const cookies = JSON.parse(cookiesString);
+      await page.setCookie(...cookies);
+    } else {
+      console.error('Arquivo de cookies não encontrado.');
+    }
+  }
+async function scrapeAndInsert(pageNumber, browser) {
     const page = await browser.newPage();
+    await setCookies(page)
+    await page.goto(`https://unglobalcompact.org/library/search?page=${pageNumber}`, { waitUntil: 'networkidle0' });
 
-    // Abra a URL desejada com base no número da página
-    await page.goto(`https://unglobalcompact.org/library/search?page=${pageNumber}&search%5Bcontent_type%5D=12&search%5Bissue_areas%5D%5B%5D=211&search%5Bkeywords%5D=`, { waitUntil: 'networkidle0' });
+    const articles = await page.$$eval('.library-component-content-block', nodes => nodes.map(node => ({
+        title: node.querySelector('h3')?.innerText,
+        description: node.querySelector('.library.description p')?.innerText,
+        imageUrl: node.querySelector('.library-component-content-block-image')?.style.backgroundImage.slice(5, -2),
+        link: node.querySelector('a')?.getAttribute('href'),
+        date: node.querySelector('.library.year')?.innerText,
+        type: node.querySelector('.library-component-content-block-tag')?.innerText
+    })));
 
-    // Raspando os dados
-    const articles = await page.$$eval('.library-component-content-block', nodes => {
-        return nodes.map(node => ({
-            title: node.querySelector('h3').innerText,
-            description: node.querySelector('.library.description p').innerText,
-            imageUrl: node.querySelector('.library-component-content-block-image').style.backgroundImage.slice(5, -2),
-            link: node.querySelector('a').getAttribute('href'),
-            date: node.querySelector('.library.year').innerText,
-            type: node.querySelector('.library-component-content-block-tag').innerText
-        }));
-    });
+    await articleCsvWriter.writeRecords(articles);
 
-    // Feche o navegador
-    await browser.close();
+    for (const article of articles) {
+        try {
+            const fullUrl = new URL(article.link, 'https://unglobalcompact.org').href;
+            await page.goto(fullUrl, { waitUntil: 'networkidle0' });
+            const pdfLinkSelector = 'a[href$=".pdf"]';
+            await page.waitForSelector(pdfLinkSelector, { visible: true, timeout: 10000 });
+            const pdfLink = await page.$eval(pdfLinkSelector, el => el.href);
+            await pdfCsvWriter.writeRecords([{ title: article.title, pdfLink }]);
+        } catch (error) {
+            console.error(`Error processing article '${article.title}': ${error}`);
+        }
+    }
 
-    // Inserindo os dados no banco de dados
-    articles.forEach(article => {
-        const sql = 'INSERT INTO globalcompact (title, description, imageUrl, link, date, type) VALUES (?, ?, ?, ?, ?, ?)';
-        const values = [article.title, article.description, article.imageUrl, article.link, article.date, article.type];
-        db.query(sql, values, (err, result) => {
-            if (err) throw err;
-            console.log(`Artigo ${article.title} inserido no banco de dados.`);
-        });
-    });
-
-    // Escreva os dados no arquivo CSV
-    csvWriter.writeRecords(articles)
-        .then(() => {
-            console.log('Dados escritos no arquivo CSV.');
-        })
-        .catch(err => {
-            console.error('Erro ao escrever no arquivo CSV:', err);
-        });
+    await page.close();
 }
 
-// Execute a função para todas as páginas de 1 a 22
-(async function () {
+(async () => {
+    const browser = await puppeteer.launch({ headless: false, defaultViewport: null });
     for (let i = 1; i <= 22; i++) {
-        await scrapeAndInsert(i);
+        console.log(`Processing page ${i}...`);
+        await scrapeAndInsert(i, browser);
     }
+    await browser.close();
 })();
