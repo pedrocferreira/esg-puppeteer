@@ -1,6 +1,6 @@
-import fs from 'fs';
 import csv from 'csv-parser';
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer';
+import fs from 'fs';
 import path from 'path';
 import { promisify } from 'util';
 
@@ -11,7 +11,14 @@ async function processCSV(file) {
   return new Promise((resolve, reject) => {
     fs.createReadStream(file)
       .pipe(csv())
-      .on('data', (data) => results.push(data))
+      .on('data', (data) => {
+        // Normalização dos dados
+        const normalizedData = {
+          Title: data.Name || data.Title || data["Stock Exchange"],
+          PDFLink: data.URL || data["PDF Link"]
+        };
+        results.push(normalizedData);
+      })
       .on('end', () => {
         console.log(`CSV processado: ${file}`);
         resolve();
@@ -36,10 +43,8 @@ async function writeUnifiedTable() {
   const csvWriter = createCsvWriter({
     path: 'tabela_unificada.csv',
     header: [
-      { id: 'title', title: 'TITLE' },
-      { id: 'nome', title: 'NOME' },
-      { id: 'pdfLink', title: 'PDF_LINK' }
-      // Inclua outros cabeçalhos conforme necessário
+      { id: 'Title', title: 'Title' },
+      { id: 'PDFLink', title: 'PDF Link' }
     ]
   });
 

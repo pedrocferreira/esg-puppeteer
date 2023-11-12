@@ -1,626 +1,626 @@
-TITLE,NOME,PDF_LINK
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+Title,PDF Link
+[former] IIRC,http://www.integratedreporting.org/wp-content/uploads/2022/07/VRF-ITP-GettingStartedGuide.pdf
+[former] IIRC,http://www.integratedreporting.org/wp-content/uploads/2022/07/VRF-ITP-GettingStartedGuide.pdf
+CDP,https://cdn.cdp.net/cdp-production/comfy/cms/files/files/000/007/937/original/CDP_Cyber_Essentials_Certificate_2022-23.pdf
+EMAS,https://green-business.ec.europa.eu/system/files/2023-07/EMAS%20presentation%20for%20organisations_2022.pdf
+EU Taxonomy,https://ec.europa.eu/info/sites/info/files/business_economy_euro/banking_and_finance/documents/200309-sustainable-finance-teg-final-report-taxonomy_en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,https://www.foresteurope.org/docs/MC/MC_helsinki_resolutionH1.pdf
+EU Taxonomy,https://foresteurope.org/wp-content/uploads/2016/10/MC_lisbon_resolutionL2_with_annexes.pdf
+EU Taxonomy,https://www.foresteurope.org/docs/MC/MC_helsinki_resolutionH1.pdf
+EU Taxonomy,https://foresteurope.org/wp-content/uploads/2016/10/MC_lisbon_resolutionL2_with_annexes.pdf
+EU Taxonomy,https://www.foresteurope.org/docs/MC/MC_helsinki_resolutionH1.pdf
+EU Taxonomy,https://foresteurope.org/wp-content/uploads/2016/10/MC_lisbon_resolutionL2_with_annexes.pdf
+EU Taxonomy,https://www.ramsar.org/sites/default/files/documents/pdf/guide/guide-restoration.pdf
+EU Taxonomy,https://www.ramsar.org/sites/default/files/documents/pdf/res/key_res_viii_14_e.pdf
+EU Taxonomy,https://eippcb.jrc.ec.europa.eu/sites/default/files/2019-11/lvic_aaf.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,https://www.etsi.org/deliver/etsi_es/203100_203199/203199/01.03.00_50/es_203199v010300m.pdf
+EU Taxonomy,https://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,http://www.fao.org/3/I8661EN/i8661en.pdf
+EU Taxonomy,https://www.foresteurope.org/docs/MC/MC_helsinki_resolutionH1.pdf
+EU Taxonomy,https://foresteurope.org/wp-content/uploads/2016/10/MC_lisbon_resolutionL2_with_annexes.pdf
+EU Taxonomy,https://www.foresteurope.org/docs/MC/MC_helsinki_resolutionH1.pdf
+EU Taxonomy,https://foresteurope.org/wp-content/uploads/2016/10/MC_lisbon_resolutionL2_with_annexes.pdf
+EU Taxonomy,https://www.foresteurope.org/docs/MC/MC_helsinki_resolutionH1.pdf
+EU Taxonomy,https://foresteurope.org/wp-content/uploads/2016/10/MC_lisbon_resolutionL2_with_annexes.pdf
+EU Taxonomy,https://eippcb.jrc.ec.europa.eu/sites/default/files/2019-11/lvic-s_bref_0907.pdf
+EU Taxonomy,https://eippcb.jrc.ec.europa.eu/sites/default/files/2019-11/lvic-s_bref_0907.pdf
+EU Taxonomy,https://eippcb.jrc.ec.europa.eu/sites/default/files/2019-11/lvic_aaf.pdf
+EU Taxonomy,https://eippcb.jrc.ec.europa.eu/sites/default/files/2019-11/pol_bref_0807.pdf
+EU Taxonomy,https://www.icnirp.org/cms/upload/publications/ICNIRPemfgdl.pdf
+EU Taxonomy,https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/5_Volume5/19R_V5_6_Ch06_Wastewater.pdf
+EU Taxonomy,https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/5_Volume5/19R_V5_6_Ch06_Wastewater.pdf
+EU Taxonomy,https://ec.europa.eu/research/participants/data/ref/h2020/other/wp/2016-2017/annexes/h2020-wp1617-annex-ga_en.pdf
+GRI,https://www.globalreporting.org/media/wtaf14tw/a-short-introduction-to-the-gri-standards.pdf
+Hong Kong,https://www.hkex.com.hk/-/media/HKEX-Market/News/Market-Consultations/2016-Present/April-2021-Review-of-CG-Code-and-LR/Consultation-Paper/cp202104.pdf
+Hong Kong,https://assets.bbhub.io/company/sites/60/2020/10/FINAL-2017-TCFD-Report-11052018.pdf
+ISSB,https://www.ifrs.org/content/dam/ifrs/about-us/legal-and-governance/constitution-docs/ifrs-foundation-constitution-2021.pdf
+ISSB,https://www.ifrs.org/content/dam/ifrs/about-us/legal-and-governance/legal-docs/trade-mark-guidelines.pdf
+Malaysia,https://www.bnm.gov.my/documents/20124/2294076/WWF_BCG_Net_Zero_Study.pdf
+New Zealand,https://legislation.govt.nz/act/public/2021/0039/latest/096be8ed81b59fc7.pdf
+PAS 2050 & 2060 (BSI),https://www.bsigroup.com/globalassets/localfiles/en-gb/about-bsi/social-responsibility/modern-slavery-statement-2023.pdf
+PCAF,https://carbonaccountingfinancials.com/files/downloads/PCAF_OperatingModel_03.pdf
+PCAF,https://www.parisalignedinvestment.org/media/2021/03/PAII-Net-Zero-Investment-Framework_Implementation-Guide.pdf
+SBTi,https://sciencebasedtargets.org/resources/files/Commitment-Compliance-Policy.pdf
+Singapore,https://api2.sgx.com/sites/default/files/2023-05/SGX%20Core%20ESG%20Metrics_for%20website%20%28updated%20Apr2023%29.pdf
+TCFD,https://assets.bbhub.io/company/sites/60/2023/09/2023-Status-Report.pdf
+TCFD,https://assets.bbhub.io/company/sites/60/2021/07/2021-Metrics_Targets_Guidance-1.pdf
+TCFD,https://assets.bbhub.io/company/sites/60/2021/07/2021-TCFD-Implementing_Guidance.pdf
+TCFD,https://assets.bbhub.io/company/sites/60/2021/10/FINAL-2017-TCFD-Report.pdf
+Thailand,https://sseinitiative.org/wp-content/uploads/2019/11/Thailand_SET.pdf
+Thailand,https://media.set.or.th/set/Documents/2023/Jun/SD_Highlight_2022_ENG.pdf
+USA,https://www.congress.gov/117/bills/hr2570/BILLS-117hr2570rh.pdf
+Australian Securities Exchange,https://sseinitiative.org/wp-content/uploads/2019/10/Australia-ASX.pdf
+Australian Securities Exchange,https://www2.asx.com.au/content/dam/asx/about/media-releases/2022/41-22-august-asx-2022-annual-report.pdf
+Australian Securities Exchange,https://www2.asx.com.au/content/dam/asx/annual-reports/asx-annual-report-2020.pdf
+Australian Securities Exchange,https://www2.asx.com.au/content/dam/asx/about/media-releases/2021/25-19-aug-asx-limited-2021-appendix-4e-and-annual-report.pdf
+Australian Securities Exchange,https://www.asx.com.au/documents/asx-compliance/cgc-principles-and-recommendations-3rd-edn.pdf
+Australian Securities Exchange,https://www.asx.com.au/documents/asx-compliance/acsi-fsc-esg-reporting-guide-final-2015.pdf
+Australian Securities Exchange,https://www.asx.com.au/documents/investor-relations/asx-annual-report-2016.pdf
+Bahrain Bourse,https://sseinitiative.org//wp-content/uploads/2019/11/Bahrain-BahrainBourse.pdf
+Bahrain Bourse,https://bahrainbourse.com/resources/files/Sustainability/BHB_SustainabilityReport_2021_EN.pdf
+Bahrain Bourse,https://bahrainbourse.com/resources/files/Sustainability/sustainability%20report_2020_en.pdf
+Bahrain Bourse,https://www.bahrainbourse.com/resources/files/Sustainability/Sustainability%20Report%20EN.pdf
+Bahrain Bourse,https://www.bahrainbourse.com/resources/files/Sustainability/ESG_Guide_2%20Jan%202023.pdf
+Dhaka Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Bangladesh-Dhaka-Stock-Exchange.pdf
+Dhaka Stock Exchange,https://www.dsebd.org/pdf/DSE%20GRI%20Guidance%20Document%20Final.pdf
+Dhaka Stock Exchange,https://www.dsebd.org/pdf/20-05-2018.pdf
+Dhaka Stock Exchange,https://www.dsebd.org/pdf/01aug18.pdf
+Euronext Brussels,https://sseinitiative.org/wp-content/uploads/2019/10/Belgium-Euronext-Brussels.pdf
+Euronext Brussels,https://sseinitiative.org/wp-content/uploads/EUR_2022_URD_MEL-2.pdf
+Euronext Brussels,https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/654213/EPRS_BRI(2021)654213_EN.pdf
+Euronext Brussels,https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+Botswana Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Botswana-BSE-2.pdf
+Botswana Stock Exchange,https://www.bse.co.bw/wp-content/uploads/2021/02/BSE_Guidance-for-Listed-Companies-on-Reporting-ESG-Information-to-Invest....pdf
+Botswana Stock Exchange,http://bse.co.bw/wp-content/uploads/2022/01/SADC-Green-Bond-Study-Workshop-Report.pdf
+B3,https://sseinitiative.org/wp-content/uploads/2019/09/Brazil-BMFBovespa.pdf
+B3,https://www.b3.com.br/data/files/1A/D7/91/AF/132F561060F89E56AC094EA8/Guia-para-empresas-listadas.pdf
+B3,http://www.bmf.com.br/portal/pages/newsletter/bmfbovespa/Folheto_ESG_B3_Bi.pdf
+TMX Group Inc.,https://sseinitiative.org//wp-content/uploads/2019/11/Canada-TMX.pdf
+TMX Group Inc.,https://hausercenter.org/iri/wp-content/uploads/2011/08/CSR-Disclosure-Updates-4-18-14.pdf
+TMX Group Inc.,https://www.osc.gov.on.ca/documents/en/Securities-Category5/csa_20101027_51-333_environmental-reporting.pdf
+TMX Group Inc.,https://sseinitiative.org/wp-content/uploads/2021/03/UN-SSE-Gender-Equality-Policy-Brief.pdf
+Bolsa de Comercio de Santiago,https://sseinitiative.org/wp-content/uploads/2019/11/Chile-Bolsa-de-Comercio-de-Santiago.pdf
+Bolsa de Comercio de Santiago,https://cibe.bolsadesantiago.com/Documentos/Noticias/Avisos%20Generales/Memoria%20Bolsa%202022.pdf
+Bolsa de Comercio de Santiago,https://cibe.bolsadesantiago.com/Documentos/Noticias/Avisos%20Generales/Memoria%20Bolsa%202021.pdf
+Bolsa de Comercio de Santiago,https://cibe.bolsadesantiago.com/Documentos/Noticias/Avisos%20Generales/memoria%20bolsa%202020.pdf
+Bolsa de Comercio de Santiago,https://cibe.bolsadesantiago.com/Documentos/Noticias/Avisos%20Generales/Memoria%20bolsa%202019.pdf
+Bolsa de Comercio de Santiago,https://cibe.bolsadesantiago.com/Documentos/Noticias/Avisos%20Generales/Memoria%20Anual%202018.pdf
+Bolsa de Comercio de Santiago,https://cibe.bolsadesantiago.com/Documentos/Noticias/Avisos%20Generales/Memoria%20BCS%202017.pdf
+Bolsa de Comercio de Santiago,https://servicioscms.bolsadesantiago.com/Corporativo/Documentos/Relacionado/Guia%20de%20Reporte%20de%20Sostenibilidad%20Chile_GRI%20y%20Bolsa%20de%20Santiago.pdf
+Bolsa de Comercio de Santiago,https://servicioscms.bolsadesantiago.com/noticias/SiteAssets/Paginas/Forms/EditForm/Gui%CC%81a%20Sostenibilidad%20de%20Emisores%20Bolsa%20de%20Santiago.pdf
+Bolsa de Comercio de Santiago,https://sseinitiative.org/wp-content/uploads/2014/08/2017-Design-and-Construction-of-Sustainability-Reports-Santiago-Exchange.pdf
+Bolsa de Comercio de Santiago,https://servicioscms.bolsadesantiago.com/Corporativo/Documentos/Relacionado/4%20-%20Gu%C3%ADa%20de%20Inversi%C3%B3n%20Responsable%20-%20Bolsa%20de%20Santiago%20(2017).pdf
+Shanghai Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/China-Shanghai-Stock-Exchange.pdf
+Shanghai Stock Exchange,http://english.sse.com.cn/news/newsrelease/a/20230425/b4870f1189eb9b4ac8a639dab9142ac6.pdf
+Shanghai Stock Exchange,http://www.sse.com.cn/aboutus/socialresponsibility/download/c/5702535.pdf
+Shanghai Stock Exchange,http://www.sse.com.cn/services/greensecurities/report/c/5705112.pdf
+Shanghai Stock Exchange,http://www.sse.com.cn/aboutus/socialresponsibility/download/c/5122392.pdf
+Shanghai Stock Exchange,http://www.sse.com.cn/aboutus/socialresponsibility/download/c/4766349.pdf
+Shanghai Stock Exchange,http://www.sse.com.cn/aboutus/socialresponsibility/download/c/4509994.pdf
+Shenzhen Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/China-Shenzhen-Stock-Exchange.pdf
+Hong Kong Exchanges and Clearing Limited,https://sseinitiative.org/wp-content/uploads/2019/11/China-HKEX.pdf
+Hong Kong Exchanges and Clearing Limited,https://www.hkex.com.hk/-/media/HKEX-Market/News/Market-Consultations/2016-Present/April-2023-Climate-related-Disclosures/Consultation-Paper/cp202304.pdf
+Hong Kong Exchanges and Clearing Limited,https://www.hsi.com.hk/static/uploads/contents/en/news/pressRelease/20180810T000000.pdf
+Hong Kong Exchanges and Clearing Limited,https://sseinitiative.org/wp-content/uploads/2022/05/HKEX-Disclaimer-for-the-Consolidated-Main-Board-Listing-Rules.pdf
+Bolsa de Valores de Colombia,https://sseinitiative.org/wp-content/uploads/2019/11/Colombia-BVC.pdf
+Bolsa Nacional de Valores,https://sseinitiative.org/wp-content/uploads/2019/11/Costa-Rica-BNV.pdf
+Bolsa Nacional de Valores,https://www.bolsacr.com/sites/default/files/29/p_memoria_de_sostenibilidad_2018_bnv.pdf
+Bolsa Nacional de Valores,https://bolsacr.com/sites/default/files/239/estandar_bonos_verdes_bnv.pdf
+Nasdaq Copenhagen,https://sseinitiative.org/wp-content/uploads/2019/11/Denmark-Nasdaq-Copenhagen.pdf
+Nasdaq Copenhagen,https://business.nasdaq.com/Docs/Nasdaq%20UNGC%20COP%202014%20RevFinal.pdf
+Egyptian Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Egypt-Egyptian-ExchangeEGXpdf.pdf
+Nasdaq Tallinn,https://sseinitiative.org/wp-content/uploads/2019/11/Estonia-Nasdaq-Tallinn.pdf
+Nasdaq Helsinki,https://sseinitiative.org/wp-content/uploads/2019/11/Finland-Nasdaq-Helsinki.pdf
+Euronext Paris,https://sseinitiative.org/wp-content/uploads/2019/11/France-Euronext-Paris.pdf
+Euronext Paris,https://www.diplomatie.gouv.fr/IMG/pdf/Mandatory_reporting_built_on_consensus_in_France.pdf
+Euronext Paris,https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+Deutsche Börse,https://sseinitiative.org/wp-content/uploads/2019/11/Germany-Deutsche-Boerse.pdf
+Deutsche Börse,https://deutsche-boerse.com/dbg/dispatch/en/binary/gdb_content_pool/imported_files/public_files/10_downloads/33_going_being_public/10_products/Communicating_sustainibility.pdf
+Deutsche Börse,https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Risk/gx-risk-women-in-the-boardroom-sixth-edition.pdf
+Deutsche Börse,https://www.dcgk.de/files/dcgk/usercontent/en/download/code/191216_German_Corporate_Governance_Code.pdf
+Ghana Stock Exchange,https://sseinitiative.org/wp-content/uploads/2022/06/GSE-Sustainable-Stock-Exchanges-Questionnaire.pdf
+Ghana Stock Exchange,https://gse.com.gh/wp-content/uploads/2022/11/GSE-ESG-DISCLOSURES-GUIDANCE-MANUAL-1-1.pdf
+Athens Exchange Group,https://sseinitiative.org/wp-content/uploads/2019/11/Greece-Athens-Stock-Exchange-ATHEX-2.pdf
+Athens Exchange Group,https://www.europarl.europa.eu/RegData/etudes/STUD/2021/700556/IPOL_STU(2021)700556_EN.pdf
+Budapest Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Hungary-Budapest-Stock-Exchange.pdf
+Budapest Stock Exchange,https://sseinitiative.org/wp-content/uploads/2021/04/ESG-Reporting-Guide_final_ENG.pdf
+Nasdaq Iceland,https://sseinitiative.org/wp-content/uploads/2019/11/Iceland-Nadaq-Iceland.pdf
+Bombay Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/10/India-BSE.pdf
+Bombay Stock Exchange,https://www.bseindia.com/downloads1/BSE_Annual_Report_2017_18.pdf
+Bombay Stock Exchange,https://www.bseindia.com/downloads1/BSEs_Guidance_doc_on_ESG.pdf
+National Stock Exchange of India,https://sseinitiative.org/wp-content/uploads/2019/11/India-National-Stock-Exchange-of-India-NSE.pdf
+National Stock Exchange of India,https://static.nseindia.com//s3fs-public/inline-files/NSE%20Annual%20Report%202022-23_0.pdf
+National Stock Exchange of India,https://sseinitiative.org/wp-content/uploads/2016/03/SEBI-format-for-Business-Responsibility-Report-2015.pdf
+National Stock Exchange of India,https://static.nseindia.com/s3fs-public/inline-files/ESG%2050%20Companies%20NSE%2011Jul2020.pdf
+National Stock Exchange of India,https://static.nseindia.com//s3fs-public/inline-files/Emerge%20Brochure.pdf
+Indonesia Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Indonesia-IDX.pdf
+Indonesia Stock Exchange,https://www.ojk.go.id/id/regulasi/Documents/Pages/Bentuk-dan-Isi-Laporan-Tahunan--Emiten-atau-Perusahaan-Publik/SEOJK%20-%2016%20-%202021.pdf
+Indonesia Stock Exchange,https://www.idx.co.id/media/7503/i-v_kep-00059_bei_07-2019.pdf
+Euronext Dublin,https://sseinitiative.org//wp-content/uploads/2019/11/Ireland-Euronext-Dublin.pdf
+Euronext Dublin,https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/654213/EPRS_BRI(2021)654213_EN.pdf
+Euronext Dublin,https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+Borsa Italiana (Euronext),https://sseinitiative.org//wp-content/uploads/2019/11/Italy-BorsaItaliana.pdf
+Borsa Italiana (Euronext),https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/654213/EPRS_BRI(2021)654213_EN.pdf
+Borsa Italiana (Euronext),https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+Borsa Italiana (Euronext),https://www.borsaitaliana.it/azioni/mercati/mercati-landingpage/slidedoc.en.pdf
+Japan Exchange Group,https://sseinitiative.org/wp-content/uploads/Japan-JPX.pdf
+Japan Exchange Group,https://sseinitiative.org/wp-content/uploads/Japan-JPX.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/investor-relations/ir-library/integrated-report/tvdivq0000008t9q-att/JPXReport2021_A4.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/investor-relations/ir-library/integrated-report/tvdivq0000008t9q-att/JPXReport2020.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/investor-relations/ir-library/integrated-report/tvdivq0000008t9q-att/JPXReport2019.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/investor-relations/ir-library/integrated-report/tvdivq0000008t9q-att/JPXReport2018_English.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/investor-relations/ir-library/integrated-report/tvdivq0000008t9q-att/JPXReport2017_English.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/investor-relations/ir-library/integrated-report/tvdivq0000008t9q-att/JPXreport2016e_all.pdf
+Japan Exchange Group,https://www.env.go.jp/en/policy/economy/erg2007.pdf
+Japan Exchange Group,https://www.jpx.co.jp/corporate/sustainability/esg-investment/handbook/nlsgeu000004n8p1-att/handbook.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/news/news-releases/0060/b5b4pj000002wxpa-att/SSE_Initiatives_j.pdf
+Japan Exchange Group,https://www.jpx.co.jp/english/corporate/sustainability/esgknowledgehub/p1j4l40000000thn-att/p1j4l40000000tlh.pdf
+Amman Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Jordan-Amman-Stock-Exchange.pdf
+Amman Stock Exchange,https://www.exchange.jo/sites/default/files/2021-11/Annual%20Report%202020.pdf
+Amman Stock Exchange,https://www.exchange.jo/sites/default/files/2022-10/Annual%20report%202021.pdf
+Amman Stock Exchange,https://ase.com.jo/sites/default/files/2022-10/Guidance%20on%20Sustainability%20Reporting.pdf
+Amman Stock Exchange,https://www.exchange.jo/sites/default/files/2018-11/Sustainability%201_9.pdf
+Amman Stock Exchange,https://www.exchange.jo/sites/default/files/2018-11/Sustainability%202_1.pdf
+Kazakhstan Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Kazakhstan-KASE.pdf
+Kazakhstan Stock Exchange,https://kase.kz/files/normative_base/rules_emitent_eng.pdf
+Kazakhstan Stock Exchange,https://kase.kz/files/normative_base/met_ekolog_soc_eng.pdf
+Nairobi Securities Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Kenya-Nairobi-Securities-Exchange.pdf
+Nairobi Securities Exchange,https://www.nse.co.ke/wp-content/uploads/NSE-Annual-Report-2022-Integrated-Report.pdf
+Nairobi Securities Exchange,https://sseinitiative.org/wp-content/uploads/2021/12/NSE-ESG-Disclosures-Guidance.pdf
+Nairobi Securities Exchange,https://sseinitiative.org/wp-content/uploads/2021/12/NSE-ESG-Disclosures-Guidance.pdf
+Nairobi Securities Exchange,https://www.nse.co.ke/digitalacademy/wp-content/uploads/sites/4/2023/01/2023-Training-Calendar-Final.pdf
+Nairobi Securities Exchange,https://www.nse.co.ke/wp-content/uploads/gbpk-background-document-2.pdf
+Boursa Kuwait,https://sseinitiative.org//wp-content/uploads/2019/11/Kuwait-Boursa-Kuwait.pdf
+Boursa Kuwait,https://www.boursakuwait.com.kw/api/documents/boursa/1681627414107.pdf
+Boursa Kuwait,https://www.boursakuwait.com.kw/api/documents/boursa/1649054880123.pdf
+Boursa Kuwait,https://www.boursakuwait.com.kw/api/documents/boursa/1630909195602.pdf
+Boursa Kuwait,https://cis.boursakuwait.com.kw/Portal/BoursaReports/BKSustainability2017.pdf
+Boursa Kuwait,https://cis.boursakuwait.com.kw/Portal/BoursaReports/BKSustainabilityE.pdf
+Boursa Kuwait,https://cis.boursakuwait.com.kw/Portal/BoursaReports/BKSustainabilityE.pdf
+Nasdaq Riga,https://sseinitiative.org//wp-content/uploads/2019/11/Latvia-Nasdaq-Riga.pdf
+Nasdaq Riga,https://business.nasdaq.com/media/2017%20Nasdaq%20Sustainability%20Report%20Digital%20ver%202_tcm5044-50886.pdf
+Nasdaq Riga,https://files.shareholder.com/downloads/NDAQ/6080571804x0x935088/840666D1-613E-4C65-BBC3-F04DC78ABDC3/2017_proxy.pdf
+Nasdaq Riga,https://business.nasdaq.com/Docs/Nasdaq%20UNGC%20COP%202014%20RevFinal.pdf
+Nasdaq Vilnius,https://sseinitiative.org//wp-content/uploads/2019/11/Lithuania-Nasdaq-Vilnius.pdf
+Nasdaq Vilnius,https://business.nasdaq.com/media/2017%20Nasdaq%20Sustainability%20Report%20Digital%20ver%202_tcm5044-50886.pdf
+Nasdaq Vilnius,https://files.shareholder.com/downloads/NDAQ/6080571804x0x935088/840666D1-613E-4C65-BBC3-F04DC78ABDC3/2017_proxy.pdf
+Nasdaq Vilnius,https://business.nasdaq.com/Docs/Nasdaq%20UNGC%20COP%202014%20RevFinal.pdf
+Bursa Malaysia,https://sseinitiative.org/wp-content/uploads/2019/11/Malaysia-BursaMalaysia.pdf
+Bursa Malaysia,https://www.bursamalaysia.com/sites/5d809dcf39fba22790cad230/assets/640ad76039fba203314fc5a2/Bursa_SR22_Hi_Res_.pdf
+Bolsa Mexicana de Valores,https://sseinitiative.org/wp-content/uploads/2019/10/Mexico-BVM.pdf
+Bolsa Mexicana de Valores,https://www.bmv.com.mx/docs-pub/SERVICIOS_EMISORAS/3q2wk7r8jj6746k46q1n.pdf
+Bolsa Mexicana de Valores,https://sseinitiative.org/wp-content/uploads/2016/04/Codigo_de_Mejores_Practicas_Corporativas_CCE_2010-1.pdf
+Bolsa Mexicana de Valores,https://www.bmv.com.mx/docs-pub/MI_EMPRESA_EN_BOLSA/CTEN_MINGE/GREEN_BONDS_PRIN_MX2.pdf
+Bourse de Casablanca,https://sseinitiative.org/wp-content/uploads/2019/11/Morocco-CasablancaExchange.pdf
+Bourse de Casablanca,https://www.ammc.ma/sites/default/files/Circulaire%20AMMC%20n%C2%B0%2003-19%20_op%C3%A9rations_%20et%20_informations_%20financi%C3%A8res.pdf
+Bourse de Casablanca,https://www.casablanca-bourse.com/BourseWeb/UserFiles/File/2017/Mai/Guide%20RSEESGVersion%20soumise%20consultation.pdf
+Bourse de Casablanca,https://www.casablanca-bourse.com/BourseWeb/UserFiles/File/rapports_annuels/2016/Rapport_Annue_%20UK_2016_site.pdf
+Euronext Amsterdam,https://sseinitiative.org/wp-content/uploads/2019/11/Netherlands-Euronext-Amsterdam.pdf
+Euronext Amsterdam,https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/654213/EPRS_BRI(2021)654213_EN.pdf
+Euronext Amsterdam,https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+New Zealand Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/New-Zealand-NZX.pdf
+New Zealand Stock Exchange,https://s3-ap-southeast-2.amazonaws.com/nzx-prod-c84t3un4/comfy/cms/files/files/000/003/239/original/FINAL_NZX_Annual_Report_2017.pdf
+New Zealand Stock Exchange,https://s3-ap-southeast-2.amazonaws.com/nzx-prod-c84t3un4/comfy/cms/files/files/000/002/924/original/NZX_ESG_Guidance_Note_-_11_December_2017_%28final_for_publication%29.pdf
+New Zealand Stock Exchange,https://s3-ap-southeast-2.amazonaws.com/nzx-prod-c84t3un4/comfy/cms/files/files/000/003/239/original/FINAL_NZX_Annual_Report_2017.pdf
+New Zealand Stock Exchange,https://s3-ap-southeast-2.amazonaws.com/nzx-prod-c84t3un4/comfy/cms/files/files/000/003/239/original/FINAL_NZX_Annual_Report_2017.pdf
+Nigerian Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Nigeria-Nigerian-Stock-Exchange-SSE.pdf
+Nigerian Exchange,https://www.nse.com.ng/aboutus-site/Corporate-Social-Responsibility-site/PublishingImages/about-us/corporate-social-responsibility/marketplace/COMMUNIQUE%20%282%29.pdf
+Macedonian Stock Exchange,https://sseinitiative.org//wp-content/uploads/2019/11/Macedonia-Macedonian-Stock-Exchange.pdf
+Macedonian Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/MSE-ESG-Reporting-Guide.pdf
+Oslo Børs (Euronext),https://sseinitiative.org/wp-content/uploads/2019/11/Norway-Oslo-Bors.pdf
+Oslo Børs (Euronext),https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+Muscat Stock Exchange,https://sseinitiative.org/wp-content/uploads/2022/03/Oman-Muscat-Stock-Exchange.pdf
+Muscat Stock Exchange,https://www.msx.om/MSMDOCS/downloads/en_1683614240441_2-MSX-AR2022-ENGLISH.pdf
+Muscat Stock Exchange,https://www.msx.om/MSMDOCS/downloads/ESG-MSX-E.pdf
+Muscat Stock Exchange,https://www.msx.om/msmdocs/downloads/MSX%20Sustainability%20Initiative.pdf
+Muscat Stock Exchange,https://www.msm.gov.om/MSMDOCS/downloads/en_1349586496956_MSM%20Bro%20New%20Pages.pdf
+Latin American Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Panama-BVP.pdf
+Latin American Stock Exchange,https://www.latinexbolsa.com/biblioteca/Sostenibilidad/Reportes/Sustainability%20Report%20Latinex%202022.pdf
+Latin American Stock Exchange,https://www.panabolsa.com/biblioteca/Sostenibilidad/Guias_Sostenibilidad/Guia_para_el_Reporte_y_Divulgacion_Voluntaria_de_Factores_ASG_v1.pdf
+Latin American Stock Exchange,https://www.latinexbolsa.com/biblioteca/Sostenibilidad/Guias_Sostenibilidad/Guide%20for%20the%20Voluntary%20Reporting%20and%20Disclosure%20of%20ESG%20Factors.pdf
+Latin American Stock Exchange,https://www.panabolsa.com/es/wp-content/uploads/2019/10/Guia-para-Emision-de-Valores-Negociables-SVS.pdf
+Latin American Stock Exchange,https://www.panabolsa.com/es/wp-content/uploads/2019/10/2019-10-23-Guidelines-for-the-Issuance-of-SGS-Securities.pdf
+Group BVL,https://sseinitiative.org/wp-content/uploads/2022/08/Bolsa-Valores-Lima-Commitment-Letter-SSE.pdf
+Group BVL,https://www.smv.gob.pe/sil/RGG0211199800000007.pdf
+Group BVL,https://www.bvl.com.pe/ipgc/PIR_guia.pdf
+Group BVL,https://www.bvl.com.pe/ipgc/MetodologiadeCalculo.pdf
+Group BVL,https://sseinitiative.org/wp-content/uploads/2017/06/MILA_-Comunicado-Indice-ESG.pdf
+Group BVL,"https://s3.us-east-1.amazonaws.com/site.documents.cdn.prod.bvl.com.pe/Gu%C3%ADa_de_Bonos_Sociales,_Sustentables_y_Alineados_a_los_ODS_de_las_Naciones_Unidas_para_el_Per%C3%BA.pdf"
+Group BVL,https://documents.bvl.com.pe/hhii/BVL013/20211220172155//EXPBAM02.pdf
+Group BVL,https://s3.us-east-1.amazonaws.com/site.documents.cdn.prod.bvl.com.pe/Segunda_Opinion_BonoSostenible2019-COFIDE.pdf
+Group BVL,https://documents.bvl.com.pe/hhii/L01785/20211223175847//EXPBAM1BC01.pdf
+Group BVL,https://s3.us-east-1.amazonaws.com/site.documents.cdn.prod.bvl.com.pe/BVL_-_socialReport.pdf
+Group BVL,https://s3.us-east-1.amazonaws.com/site.documents.cdn.prod.bvl.com.pe/CajaArequipa-Segunda_Opinion.pdf
+Group BVL,https://s3.us-east-1.amazonaws.com/site.documents.cdn.prod.bvl.com.pe/COFIDE_Segunda_Opinion.pdf
+Group BVL,https://www.bvl.com.pe/BonosVerdesReporte.pdf
+Group BVL,https://www.bvl.com.pe/BonosVerdesReporte_Vigeo.pdf
+Group BVL,https://www.bvl.com.pe/scr/english/ppt/brochure.pdf
+Group BVL,https://sseinitiative.org/wp-content/uploads/2017/06/BVL_Certificado-huella-carbono.pdf
+Group BVL,https://sseinitiative.org/wp-content/uploads/2017/06/BVL_LVDM2016.pdf
+Group BVL,https://sseinitiative.org/wp-content/uploads/2017/06/BVL_LVDM2015.pdf
+Group BVL,https://sseinitiative.org/wp-content/uploads/2017/06/BVL_LVDM2014.pdf
+Philippine Stock Exchange,http://www.sseinitiative.org/wp-content/uploads/2019/05/Philippines-PSE.pdf
+Philippine Stock Exchange,https://documents.pse.com.ph/wp-content/uploads/sites/14/2023/05/2022-Sustainability-Report-Philippine-Stock-Exchange-Inc.-Final.pdf
+Philippine Stock Exchange,https://documents.pse.com.ph/wp-content/uploads/sites/14/2022/10/SR-2021-FINAL-1.pdf
+Philippine Stock Exchange,https://documents.pse.com.ph/wp-content/uploads/sites/14/2021/09/PSE-Sustainability-Report-2020_publicatione.pdf
+Philippine Stock Exchange,https://documents.pse.com.ph/wp-content/uploads/sites/14/2021/09/PSE-Sustainability-Report-2019-Final_0629.pdf
+Philippine Stock Exchange,https://documents.pse.com.ph/wp-content/uploads/sites/14/2020/06/2018-PSE-Digital-Sustainability-Report.pdf
+Philippine Stock Exchange,https://documents.pse.com.ph/wp-content/uploads/sites/14/2020/06/2017-PSE-Sustainability-Report.pdf
+Philippine Stock Exchange,https://www.sec.gov.ph/wp-content/uploads/2019/11/2016_memo_circular_no.19.pdf
+Philippine Stock Exchange,https://www.sec.gov.ph/wp-content/uploads/2020/02/2018NOTICE_5thSEC-PSECGFORUM_NEWforREGISTRATION.pdf
+Philippine Stock Exchange,https://www.sec.gov.ph/wp-content/uploads/2019/11/2016_memo_circular_no.19.pdf
+Warsaw Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Poland-WSE.pdf
+Warsaw Stock Exchange,https://www.gpw.pl/pub/files/PDF/csr/Strategia_CSR_GPW_en.pdf
+Warsaw Stock Exchange,https://www.gpw.pl/pub/GPW/ESG/ESG_Reporting_Guidelines.pdf
+Warsaw Stock Exchange,https://www.gpw.pl/pub/GPW/files/PDF/RI/2018_03_GPW_Fact_sheet_EN.pdf
+Euronext Lisbon,https://sseinitiative.org/wp-content/uploads/2019/11/Portugal-Euronext-Lisbon.pdf
+Euronext Lisbon,https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/654213/EPRS_BRI(2021)654213_EN.pdf
+Euronext Lisbon,https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+Qatar Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Qatar-Qatar-Stock-Exchange.pdf
+Qatar Stock Exchange,https://sseinitiative.org/wp-content/uploads/2015/11/Guidance-on-ESG-Reporting.pdf
+Bucharest Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Romania-BVB.pdf
+Bucharest Stock Exchange,https://sseinitiative.org/wp-content/uploads/2022/07/BVB-ESG_Reporting_Guidelines.pdf
+Bucharest Stock Exchange,https://www.bvb.ro/info/Rapoarte/Diverse/ENG_Corporate%20Governance%20Code_WEB_revised.pdf
+Moscow Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Russia-MoscowExchangeMOEX.pdf
+Moscow Exchange,https://fs.moex.com/f/16010/mosbirzha-esg-rus-book-1012.pdf
+Saudi Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Saudi-Arabia-Tadawul-Stock-Exchange.pdf
+Saudi Exchange,https://saudire.net/images/ESG/ESG_report_Ar_2020.pdf
+Johannesburg Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/SouthAfrica-JohannesburgStockExchange.pdf
+Johannesburg Stock Exchange,https://group.jse.co.za/sites/default/files/media/documents/JSE%20Ltd%20-%20Sustainability%20Report%202022%20-%20as%20published_0.pdf
+Johannesburg Stock Exchange,https://www.jse.co.za/sites/default/files/media/documents//JSE%20Sustainability%20Recommended%20Disclosures%20and%20Metrics_FA_.pdf
+Johannesburg Stock Exchange,https://www.jse.co.za/sites/default/files/media/documents//JSE%20Climate%20Disclosure%20Guidance%202021_SPS.pdf
+Johannesburg Stock Exchange,https://www.jse.co.za/sites/default/files/media/documents//JSE%20Climate%20Disclosure%20Guidance%202021_SPS.pdf
+Singapore Exchange,https://api2.sgx.com/sites/default/files/2022-09/FY%202022%20Annual%20Report%20%28Sustainability%20Report%20pages%2044-82%29_0.pdf
+Singapore Exchange,https://api2.sgx.com/sites/default/files/2018-07/Sustainability%20Reporting%20Guide%20%28220218%29.pdf
+Bolsas y Mercados Españoles,https://sseinitiative.org/wp-content/uploads/2020/01/Spain-Bolsas-y-Mercados-Espan%CC%83oles.pdf
+Bolsas y Mercados Españoles,https://www.bolsasymercados.es/docs/inf_legal/ing/economico/2021/NonFinancialInfo_2021.pdf
+Bolsas y Mercados Españoles,https://www.bolsasymercados.es/docs/inf_legal/ing/economico/2021/NonFinancialInfo_2021.pdf
+Bolsas y Mercados Españoles,https://www.bolsasymercados.es/docs/BME/docsSubidos/Estudios-Articulos/BME-voluntary-guidance-sustainability-information-listed-companies.pdf
+Bolsas y Mercados Españoles,https://www.bolsamadrid.es/docs/Indices/Ibex/Criterios_FTSE4GOODIBEX_ESP.pdf
+Bolsas y Mercados Españoles,https://www.coe.int/t/pace/campaign/stopviolence/Source/spain_constitutionalact3_2007_en.pdf
+Bolsas y Mercados Españoles,https://www.bolsasymercados.es/docs/inf_legal/ing/economico/2021/NonFinancialInfo_2021.pdf
+Bolsas y Mercados Españoles,https://www.bolsasymercados.es/docs/BME/docsSubidos/Comunicacion_Media/BME-overview.pdf
+Colombo Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Sri-Lanka-CSE.pdf
+Colombo Stock Exchange,https://cdn.cse.lk/pdf/sustainability-document.pdf
+Colombo Stock Exchange,https://cdn.cse.lk/pdf/Corporate_Governance_Code_2013_book.pdf
+Colombo Stock Exchange,https://cdn.cse.lk/cms-internal/news/jpCwsV3taSrLrBPm_25Apr2023160233GMT_1682438553143.pdf
+Colombo Stock Exchange,https://www.cse.lk/pdf/CSE_Annual_Report_2014.pdf
+Nasdaq Stockholm,https://sseinitiative.org/wp-content/uploads/2019/11/Sweden-Nasdaq-Stockholm.pdf
+Nasdaq Stockholm,https://www.lacp.com/2017vision/pdf/12755.pdf
+Nasdaq Stockholm,https://business.nasdaq.com/Docs/Nasdaq%20UNGC%20COP%202014%20RevFinal.pdf
+SIX Swiss Exchange,https://sseinitiative.org/wp-content/uploads/2022/01/Switzerland-SIX-1.pdf
+SIX Swiss Exchange,https://www.six-group.com/dam/download/report/annual/2015/six-annual-report-2015-en.pdf
+SIX Swiss Exchange,https://www.newsd.admin.ch/newsd/message/attachments/70878.pdf
+SIX Swiss Exchange,https://www.newsd.admin.ch/newsd/message/attachments/70879.pdf
+SIX Swiss Exchange,https://www.ser-ag.com/dam/downloads/publication/obligations/guidelines/standards-sustainability-en.pdf
+SIX Swiss Exchange,https://www.six-group.com/dam/download/sites/exchange-services/investor-relations-handbook/investor-relations-handbook-en.pdf
+SIX Swiss Exchange,https://www.world-exchanges.org/storage/app/media/WFE%20Annual%20Sustainability%20Survey%202021%20Final.pdf
+Stock Exchange of Thailand,https://sseinitiative.org/wp-content/uploads/2019/11/Thailand_SET.pdf
+Stock Exchange of Thailand,https://media.set.or.th/set/Documents/2023/Jun/SD_Highlight_2022_ENG.pdf
+Borsa İstanbul,https://sseinitiative.org/wp-content/uploads/2019/11/Turkey-Borsa-Istanbul.pdf
+Borsa İstanbul,https://www.borsaistanbul.com/files/bist-2020-integrated-annual-reportand-financial-statements.pdf
+Borsa İstanbul,https://cmb.gov.tr/data/6281521a1b41c617eced0ee8/ab21a9093d112e6f9dea44abbd3c4341.pdf
+Borsa İstanbul,https://cmb.gov.tr/data/6281521a1b41c617eced0ee8/3606055f44464de4b6fe9dad9f1cec7b.pdf
+Borsa İstanbul,https://www.borsaistanbul.com/files/Surdurulebilirlik_Rehberi_2020.pdf
+Borsa İstanbul,https://www.borsaistanbul.com/files/sirketler-Icin-Entegre-raporlama-rehberi.pdf
+Borsa İstanbul,https://www.borsaistanbul.com/files/iklim-raporlama-rehberi.pdf
+Borsa İstanbul,https://spk.gov.tr/data/6231ce881b41c612808a3a1c/b2d06c64099c9e7e8877743afc7d2484.pdf
+Bourse des Valeurs Mobilières de Tunis,https://sseinitiative.org/wp-content/uploads/2019/11/Tunisia-Tunis-Stock-Exchange.pdf
+Abu Dhabi Securities Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/United-Arab-Emirates_Abu-Dhabi-Securities-Exchange.pdf
+Dubai Financial Market,https://sseinitiative.org/wp-content/uploads/2019/11/United-Arab-Emirates-DFM.pdf
+Dubai Financial Market,https://sseinitiative.org/wp-content/uploads/7th-February-2023-DFM-hosted-ESG-workshop-in-collaboration-with-Hawkamah-and-Middle-East-Investor-Relations-Association.pdf
+Euronext London,https://sseinitiative.org/wp-content/uploads/2019/11/UK-Euronext-London.pdf
+Euronext London,https://sseinitiative.org/wp-content/uploads/2022/05/Euronext-ESG-guide-2022.pdf
+London Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/UK-LSE.pdf
+London Stock Exchange,https://sseinitiative.org/wp-content/uploads/2016/07/LSEG-Corporate-Responsibility-Report-31Dec2015.pdf
+London Stock Exchange,https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/206241/bis-13-889-companies-act-2006-draft-strategic-and-directors-report-regulations-2013.pdf
+London Stock Exchange,https://www.lseg.com/sites/default/files/content/GReen/LSEG_Guide_to_ESG_Reporting_2020.pdf
+London Stock Exchange,https://docs.londonstockexchange.com/sites/default/files/documents/LSE_guide_to_climate_reporting_final_0.pdf
+London Stock Exchange,https://www.lseg.com/sites/default/files/content/documents/20170403%20Green%20Bonds.pdf
+London Stock Exchange,https://docs.londonstockexchange.com/sites/default/files/documents/LSE_guide_to_climate_reporting_final_0.pdf
+Nasdaq,https://sseinitiative.org/wp-content/uploads/2019/11/USA-NASDAQ.pdf
+Nasdaq,https://business.nasdaq.com/media/2017%20Nasdaq%20Sustainability%20Report%20Digital%20ver%202_tcm5044-50886.pdf
+Nasdaq,https://www.nasdaq.com/docs/2019/11/26/2019-ESG-Reporting-Guide.pdf
+Nasdaq,https://business.nasdaq.com/media/Nasdaq%20UNGC%20COP%202014%20RevFinal_tcm5044-19892.pdf
+NYSE,https://www.intercontinentalexchange.com/publicdocs/2018_CR_Report.pdf
+NYSE,https://www.ice.com/publicdocs/2019_CRR.pdf
+NYSE,https://www.ice.com/publicdocs/2019_CRR.pdf
+Hanoi Stock Exchange,https://ssc.gov.vn/ssc/contentattachfile/idcplg?dID=103390&dDocName=APPSSCGOVVN162103170&Rendition=No.155-2015-TT-BTC&filename=C155mf6Oct15DisclosureInformationSecurities%20(ban%20day%20du).pdf
+Ho Chi Minh Stock Exchange,https://sseinitiative.org/wp-content/uploads/2019/11/Vietnam-HOSE.pdf
+Ho Chi Minh Stock Exchange,https://ssc.gov.vn/ssc/contentattachfile/idcplg?dID=103390&dDocName=APPSSCGOVVN162103170&Rendition=No.155-2015-TT-BTC&filename=C155mf6Oct15DisclosureInformationSecurities%20(ban%20day%20du).pdf
+Ho Chi Minh Stock Exchange,https://sseinitiative.org/wp-content/uploads/2014/08/20161212_ES-Disclosure-Guideline-ENGLISH.pdf
+Ho Chi Minh Stock Exchange,https://www.giz.de/de/downloads/VietNam-GreenGrowth-Strategy.pdf
+The 12th United Nations Global Compact–Accenture CEO Study,https://info.unglobalcompact.org/l/591891/ompact-Accenture-CEO-Study-pdf/58c97n
+The 12th United Nations Global Compact–Accenture CEO Study,https://info.unglobalcompact.org/l/591891/n6PO-CEO-Study-Infographic-pdf/58c97r
+The 12th United Nations Global Compact–Accenture CEO Study,https://info.unglobalcompact.org/l/591891/CDDZP-CEO-Study-Slideshare-pdf/58c97v
+Business Dilemmas Forum: Navigating Expectations for Societal Leadership,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNGC%20Business%20Dilemmas%20Forum%20Summary.pdf
+Communication on Progress Guidebook,https://storage.pardot.com/591891/1677164626UVOSM5Bv/UNGC_CoP_GuideBook__Feb2023_.pdf
+"CORPORATE CLIMATE TARGET SETTING, ACTION AND GLOBAL COLLABORATION TOWARDS A NET-ZERO FUTURE - ACCELERATE 2030 AGENDA FOR SUSTAINABLE DEVELOPMENT THROUGH GLOBAL DEVELOPMENT INITIATIVE",https://ungc-communications-assets.s3.amazonaws.com/docs/publications/CORPORATE%20CLIMATE%20TARGET%20SETTING.pdf
+CoP Policy,https://ungc-communications-assets.s3.us-west-2.amazonaws.com/docs/about_the_gc/CoP-faq.pdf
+CEO Statement of Continued Support,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/CEO%20Statement%20of%20Continued%20Support%20%5BJan2023%5D_German.pptx.pdf
+Just Transition and Renewable Energy: A Business Brief,https://info.unglobalcompact.org/l/591891/able-Energy-Business-Brief-pdf/58cd4n
+Just Transition and Renewable Energy: A Business Brief,https://info.unglobalcompact.org/l/591891/justa-y-energ--a-renovable-pdf/58cd4r
+CFO ACTION ON CORPORATE INVESTMENT AND FINANCE FOR SUSTAINABLE DEVELOPMENT,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/FINAL_CFO%20Action.pdf
+Just Transition in Supply Chains: A Business Brief,https://info.unglobalcompact.org/l/591891/pply-Chains-Business-Brief-pdf/58ckh5
+Just Transition in Supply Chains: A Business Brief,https://info.unglobalcompact.org/l/591891/-in-Supply-Chains-FINAL-ES-pdf/58ckh8
+Forward Faster Action Guides,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Arabic-Forward%20Faster%20FAQ%202023.pdf
+CEO Water Mandate: 2022 Impact Report,https://ceowatermandate.org/wp-content/uploads/2023/07/CEO-Water-Mandate-2022-Impact-Report.pdf
+Water Resilience Coalition: 2022 Impact Report,https://ceowatermandate.org/resilience/wp-content/uploads/sites/37/2023/07/WRC-Impact-Report-2022.pdf
+"Business Leadership in Times of Crisis: Collected Insights from Chief Executive Officers into Successes, Challenges and Areas for Future Focus",https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Business%20Leadership%20in%20Times%20of%20Crisis_Low-Res.pdf
+Global Seaweed Coalition Annual Report,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Seaweed%20Report%20Design%20Project%20Final.pdf
+United Nations Global Compact-Accenture Global Private Sector SDG Stocktake,https://info.unglobalcompact.org/l/591891/-SDG-Stocktake-Report-2023-pdf/58cmjy
+United Nations Global Compact-Accenture Global Private Sector SDG Stocktake,https://info.unglobalcompact.org/l/591891/UNGC-Stocktake-Infographic-pdf/58cmk2
+SDG Playbook for SMEs,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNGC-Playbook-Final.pdf
+ILO Helpdesk for Business on International Labour Standards,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/ILO%20Helpdesk%20for%20business%20flyer%20french.pdf
+UN Global Compact Annual Report,http://www.unglobalcompact.org/docs/publications/UNGC_2016_Annual_Mgmt_Report.pdf
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/ark-Reference-Sheets--All--pdf/58cg58
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/on-Benchmarks-Russian-2021-pdf/58cg5c
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/EGRATED-SDG-INVESTMENTS-AN-pdf/58cg5g
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/ade-Referencia-empresarial-pdf/58cg5k
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/NTS--INJURIES-AND-DISEASES-pdf/58cg5n
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/ones-y-enfermedades-de-tra-pdf/58cg5r
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/lement-SDG-Ambition-Benchm-pdf/58cg5v
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/ay-for-work-of-equal-value-pdf/58cg5y
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/on-Benchmark-Reference-She-pdf/58cg62
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/t-all-levels-of-management-pdf/58cg65
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/T-IN-WATER-STRESSED-BASINS-pdf/58cg68
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/-LANDFILL-AND-INCINERATION-pdf/58cg6g
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/S-POLLUTANTS-AND-CHEMICALS-pdf/58cg6k
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/EWABLE-RECYCABLE-OR-REUSAB-pdf/58cg6n
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/N-LINE-WITH-A-1-5C-PATHWAY-pdf/58cg6r
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/N-LINE-WITH-A-1-5C-PATHWAY-pdf/58cg6r
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/5-SDG-Ambition-SBTi-200923-pdf/58cg6v
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/-PRODUCTS-RECOVERED-AND-RE-pdf/58cg6y
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/ITY-AND-ZERO-DEFORESTATION-pdf/58cg72
+SDG Ambition Benchmark Reference Sheets,https://info.unglobalcompact.org/l/591891/ZERO-INCIDENCES-OF-BRIBERY-pdf/58cg75
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq6y
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq72
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq75
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq78
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq7c
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq7g
+Advancing Gender Equality on International Women's Day and Every Other Day,https://info.unglobalcompact.org/l/591891/C-International-Womans-Day-pdf/58cq7k
+Corporate Net Zero Pathway - Delivering the Paris Agreement and the Sustainable Development Goals,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Corporate%20Net%20Zero%20Pathway%20-%20Delivering%20the%20Paris%20Agreement%20and%20the%20SDGs%20%282021%29_English%20version.pdf
+Ukraine Humanitarian Crisis Business Guide,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/2022-03-01%20ukr_business_guide.pdf
+Women’s Empowerment and Business 2022 Trends and Opportunities: Progress Amid Pandemic Challenges Across Regions,https://info.unglobalcompact.org/l/591891/r335-2022-WEPs-Tool-Report-pdf/58cq7n
+Women’s Empowerment and Business 2022 Trends and Opportunities: Progress Amid Pandemic Challenges Across Regions,https://info.unglobalcompact.org/l/591891/2-WEPs-Tool-Report-Chinese-pdf/58cq7r
+Women’s Empowerment and Business 2022 Trends and Opportunities: Progress Amid Pandemic Challenges Across Regions,https://info.unglobalcompact.org/l/591891/22-WEPs-Tool-Report-French-pdf/58cq7v
+Women’s Empowerment and Business 2022 Trends and Opportunities: Progress Amid Pandemic Challenges Across Regions,https://info.unglobalcompact.org/l/591891/22-WEPs-Tool-Report-German-pdf/58cq7y
+Women’s Empowerment and Business 2022 Trends and Opportunities: Progress Amid Pandemic Challenges Across Regions,https://info.unglobalcompact.org/l/591891/2-WEPs-Tool-Report-Spanish-pdf/58cq82
+Women’s Empowerment and Business 2022 Trends and Opportunities: Progress Amid Pandemic Challenges Across Regions,https://info.unglobalcompact.org/l/591891/EPs-Tool-Report-Portuguese-pdf/58cq85
+SME Engagement Strategy,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN%20Global%20Compact%20SME%20Strategy.pdf
+Setting Science-Based Targets in the Seafood Sector: Best Practices to Date,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Seafood%20Sector%20Guide%20to%20Setting%20Science%20Based%20Targets.pdf
+UN Global Compact China Strategy,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/CHINA%20STRATEGY-digital%20version-English.pdf
+Charting the Course: Embedding children’s rights in responsible business conduct,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Charting%20the%20Course%20UNI%20Save%20UNGC%20Brief.pdf
+ABLC Roundtable Perspectives: Making Ambitious Climate Mitigation Action a Reality in Africa,https://info.unglobalcompact.org/l/591891/-Reality-in-Africa-ABLC-Ro-pdf/58cq8r
+Financing Climate Action in Africa,https://info.unglobalcompact.org/l/591891/LC-Roundtable-Perspectives-pdf/58cq8v
+Shifting the Focus to Adaptation and Resilience in Africa,https://info.unglobalcompact.org/l/591891/nce-in-Africa-ABLC-Roundta-pdf/58cq8y
+Delivering on the Promise of a Just Transition in Africa,https://info.unglobalcompact.org/l/591891/on-in-Africa-ABLC-Roundtab-pdf/58cq92
+Elevating African Business Leaders’ Call for Global Collective Action,https://info.unglobalcompact.org/l/591891/Global-Collective-Action-A-pdf/58cq95
+Introduction to Just Transition: A Business Brief,https://info.unglobalcompact.org/l/591891/duction-to-Just-Transition-pdf/58cq98
+Introduction to Just Transition: A Business Brief,https://info.unglobalcompact.org/l/591891/ta-Pacto-Mundial-de-la-ONU-pdf/58cq9c
+Introduction to Just Transition: A Business Brief,https://info.unglobalcompact.org/l/591891/Y-Just-Transition---Korean-pdf/58cq9g
+A Path Forward: 5 Key Elements to Drive Climate Action in Africa,https://info.unglobalcompact.org/l/591891/ate-Action-ABLC-Roundtable-pdf/58cq9y
+Applying a Gender Lens to Sustainable Procurement,https://www.ohchr.org/Documents/Issues/Business/BookletGenderDimensionsGuidingPrinciples.pdf
+Applying a Gender Lens to Sustainable Procurement,https://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/publication/wcms_650553.pdf
+Applying a Gender Lens to Sustainable Procurement,https://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/---publ/documents/publication/wcms_674831.pdf
+Applying a Gender Lens to Sustainable Procurement,https://www.smefinanceforum.org/sites/default/files/Data%20Sites%20downloads/MSME%20Report.pdf
+Applying a Gender Lens to Sustainable Procurement,https://www.ohchr.org/Documents/Issues/Business/BookletGenderDimensionsGuidingPrinciples.pdf
+Bridging the Gap in the Arab States: Emerging Private Sector Response and Recovery Measures for Gender Equality amid COVID-19,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/WEPs%20Bridging%20the%20Gap%20Companion%20Report_English.pdf
+CHARTING THE COURSE: Embedding children’s rights in responsible business conduct,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNICEF_Charting-Course-2022_Web.pdf
+The African Business Leaders' Climate Statement,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The%20African%20Business%20Leaders%E2%80%99%20Climate%20Statement.pdf
+Just Transition for Climate Adaptation: A Business Brief,https://info.unglobalcompact.org/l/591891/e-Adaptation---Final-Brief-pdf/58cqb2
+Just Transition for Climate Adaptation: A Business Brief,https://info.unglobalcompact.org/l/591891/ion-Final-Brief-ES-Digital-pdf/58cqb5
+Mapping a Maritime Just Transition for Seafarers,https://info.unglobalcompact.org/l/591891/t-Transition-for-Seafarers-pdf/58cqb8
+Water Resilience Assessment Framework - Corporate Guidance,https://info.unglobalcompact.org/l/591891/ience-Assessment-Framework-pdf/58cqbr
+Financing a Just Transition: A Business Brief,https://info.unglobalcompact.org/l/591891/inancing-a-Just-Transition-pdf/58cqc8
+Financing a Just Transition: A Business Brief,https://info.unglobalcompact.org/l/591891/Just-Transition-ES-Digital-pdf/58cqcc
+2022 UN Ocean Conference - Outcomes of the High-Level Meeting on Ocean and Climate,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN%20Ocean%20Conference%20Report.pdf
+Race to Zero: Mobilizing Leadership for a Net Zero Economy,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Race%20to%20Zero%20Report-singles.pdf
+UN Global Compact Strategy 2021–2023,https://ungc-communications-assets.s3.amazonaws.com/docs/about_the_gc/UN-GLOBAL-COMPACT-STRATEGY-2021-2023.pdf
+From Ambition to Impact: How companies are reducing emissions at scale with science-based targets (Science Based Targets initiative Annual Progress Report 2020),https://sciencebasedtargets.org/resources/files/SBTiProgressReport2020.pdf
+Accelerating Sustainable Seafood,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Accelerating%20Sustainable%20Seafood.pdf
+Building Sustainable and Resilient Healthcare Infrastructure in BRI Countries to Accelerate the Sustainable Development Goals,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNGC%20BRI%20AP%20Healthcare%20Report_English.pdf
+Implementing Effective Modern Slavery Grievance Mechanisms: A Guidance Note for Business,https://unglobalcompact.org.au/wp-content/uploads/2021/03/4261-UNGC-Grievance-Mechanisms-GUIDANCE-DOC_28pp-9-FA.pdf
+Effective Modern Slavery Grievance Mechanisms: A Case Study Publication for Business,https://unglobalcompact.org.au/wp-content/uploads/2021/03/4261-UNGC-Grievance-Mechanisms-CASE-STUDY-10-FA.pdf
+Tackling Climate Change is the Greatest Global Health Opportunity of the Twenty-First Century - An Empowering Business Narrative and Call for Health Resilient Climate Action,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNGC%20Business%20Narrative%20and%20Call%20for%20Health%20Resilient%20Climate%20Action.pdf
+Black Lives Matter & Business,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Black-Lives-Matter-Business-report.pdf
+Implementing Effective Modern Slavery Grievance Mechanisms: A Guidance Note for Business,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Implementing%20Effective%20Modern%20Slavery%20Grievance%20Mechanisms_Guidance%20Note%20for%20Business_FINAL.pdf
+Effective Modern Slavery Grievance Mechanisms: A Case Study Publication for Business,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/GCNA_Effective%20Modern%20Slavery%20Grievance%20Mechanisms_Case%20Study%20Report%20for%20Business_FINAL.pdf
+SBTi Corporate Manual,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/SBTi-Corporate-Manual.pdf
+Maritime Transport and the COVID-19 Crew Change Crisis: A Tool to Support Human Rights Due Diligence,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Maritime-Human-Rights-Risks-and-the-COVID-19-Crew-Change-Crisis.pdf
+Achieving the Living Wage Ambition: Reference Sheet and Implementation Guidance,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Achieving_the_Living_Wage_Ambition_Reference_Sheet_and_Implementation_Guidance_EN.pdf
+EXECUTIVE SUMMARY - SDG 16 Business Framework Inspiring Transformational Governance,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/EXECUTIVE-SUMMARY-SDG-16-Business-Framework-Inspiring-Transformational-Governance.pdf
+"Advancing Business Understanding of Peace, Justice and Strong Institutions Country Consultation Reports",https://assets.adobe.com/public/1288267c-25b0-4b9d-6020-872fd163ce70/Country%20Consultation%20Report_Brazil.pdf
+"ADVANCING BUSINESS UNDERSTANDING OF PEACE, JUSTICE AND STRONG INSTITUTIONS - COUNTRY CONSULTATION GLOBAL SYNTHESIS REPORT",https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Country%20Consultation%20Global%20Synthesis%20Report.pdf
+Accelerating Blue Bonds Issuances in Latin America and the Caribbean,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Accelerating%20Blue%20Bonds%20Issuances%20in%20Latin%20America%20and%20the%20Caribbean.pdf
+Target Gender Equality Case Studies,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Case%20Study%20-%20Natura.pdf
+Target Gender Equality Interviews with Female Leaders,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/TGE%20Profile%20-%20Ferrocarrils%20de%20la%20Generalitat%20de%20Catalunya.pdf
+Taking the Temperature. Assessing and scaling-up climate ambition in the G7 business sector,https://sciencebasedtargets.org/resources/files/SBTi-TakingtheTemperatureReport2021.pdf
+Leadership Briefing from the UN Global Compact,https://info.unglobalcompact.org/l/591891/une-Summit-Executive-Brief-pdf/58cqcn
+Uniting against Corruption: A Playbook on Anti-Corruption Collective Action,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/2021_Anti-Corruption_Collective.pdf
+CFO Principles KPIs and Definitions for Progress Measurement and Target Setting,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/KPIs-and-Definitions-for-Progress-Measurement-and-Targets-setting-UN-Global-Compact-CFO-Taskforce-for-the-SDGs.pdf
+The SME Guide to Corporate Sustainability,https://info.unglobalcompact.org/l/591891/o-Corporate-Sustainability-pdf/58cqcr
+The Future Is Green And Inclusive - Eastern Europe,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The%20Future%20Is%20Green%20and%20Inclusive.pdf
+Charting a 1.5°C Trajectory for Maritime Transport,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Charting%20a%201.5%C2%B0C%20Trajectory%20for%20Maritime%20Transport.pdf
+Blueprint for a Climate-Smart Ocean to Meet 1.5°C,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/_Blueprint%20for%20a%20Climate-Smart%20Ocean%20to%20Meet%201.5%C2%B0C.pdf
+"Gender Equality, Diversity & Inclusion Spotlight",https://info.unglobalcompact.org/l/591891/nd20Inclusion20Spotlight20-pdf/58cqcv
+"Gender Equality, Diversity & Inclusion Spotlight",https://info.unglobalcompact.org/l/591891/ight-DE-REV-FINAL-Designed-pdf/58cqcy
+"Gender Equality, Diversity & Inclusion Spotlight",https://info.unglobalcompact.org/l/591891/lusion20Spotlight-Georgian-pdf/58cqd2
+"Gender Equality, Diversity & Inclusion Spotlight",https://info.unglobalcompact.org/l/591891/ht20-PT-REV-FINAL-Designed-pdf/58cqd5
+"Gender Equality, Diversity & Inclusion Spotlight",https://info.unglobalcompact.org/l/591891/ht20-ES-REV-FINAL-Designed-pdf/58cqd8
+"Gender Equality, Diversity & Inclusion Spotlight",https://info.unglobalcompact.org/l/591891/clusion20Spotlight-Turkish-pdf/58cqdc
+UN Global Compact Africa Strategy 2021–2023,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNGC_Mobilising%20Business%20in%20Africa_2021_2023.pdf
+Nine Business Practices for Improving Safety and Health Through Supply Chains and Building a Culture of Prevention and Protection,https://info.unglobalcompact.org/l/591891/lications-OSH20Brief-FINAL-pdf/58cqdg
+Taking the Temperature: Unlocking Breakthrough Climate Action in the G20,https://sciencebasedtargets.org/resources/files/Taking-the-Temperature-in-the-G20.pdf
+Seaweed as a Nature-Based Climate Solution Vision Statement,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Seaweed%20as%20a%20Nature-Based%20Climate%20Solution.pdf
+"Women, Peace and Security: A Guidance for Business",https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UNGC_Women__Peace_and_Security_Paper.pdf
+The 2021 United Nations Global Compact–Accenture CEO Sustainability Study,https://info.unglobalcompact.org/l/591891/-Sustainability-2021-FINAL-pdf/58cqdk
+The 2021 United Nations Global Compact–Accenture CEO Sustainability Study,https://info.unglobalcompact.org/l/591891/-2021-CEO-Study-SlideShare-pdf/58cqdn
+Roadmap to Integrate Clean Offshore Renewable Energy into Climate-smart Marine Spatial Planning,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Roadmap-to-Integrate-Clean-Offshore-Renewable-Energy-into-Climate-smart-Marine-Spatial-Planning.pdf
+Status Report: Business Ambition for 1.5°C - Responding to the Climate Crisis,https://sciencebasedtargets.org/resources/files/status-report-Business-Ambition-for-1-5C-campaign.pdf
+SBTi Corporate Net-Zero Standard,https://sciencebasedtargets.org/resources/files/Net-Zero-Standard.pdf
+Frequently Asked Questions About the Guiding Principles on Business and Human Rights,https://www.unglobalcompact.org/docs/publications/FAQ_PrinciplesBussinessHR.pdf
+SDG Ambition – Scaling Business Impact for the Decade of Action,https://info.unglobalcompact.org/l/591891/-New-UN-Compact-Initiative-pdf/58cqdr
+SDG Ambition – Scaling Business Impact for the Decade of Action,https://info.unglobalcompact.org/l/591891/-SDG-Ambition20-20FINAL-ES-pdf/58cqdv
+SDG Ambition – Scaling Business Impact for the Decade of Action,https://info.unglobalcompact.org/l/591891/Compact-Initiative-Russian-pdf/58cqdy
+UNGC 2020 Business Plan,http://www.unglobalcompact.org/docs/about_the_gc/UNGC-2020-UNGC-Business-Plan.pdf
+Why climate change and human rights are a business issue,http://www.unglobalcompact.org.au/new/wp-content/uploads/2020/01/2020.01_GCNA-Climate-HR-Discussion-Paper-Final.pdf
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/yala-Danone-Unilever-FINAL-pdf/58cqf2
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/rategy-Danone-Maersk-FINAL-pdf/58cqf5
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/sStrategy-CDL-Maersk-FINAL-pdf/58cqf8
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/-Iberdrola-Safaricom-FINAL-pdf/58cqfc
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/Danone-Iberdrola-PTT-FINAL-pdf/58cqfg
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/s-Enel-Maersk-Natura-FINAL-pdf/58cqfk
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/Iberdrola-Telefonica-FINAL-pdf/58cqfn
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/Cemex-Maersk-Nutresa-FINAL-pdf/58cqfr
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/stmanChemical-Natura-FINAL-pdf/58cqfv
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/t-CDL-Enel-Iberdrola-FINAL-pdf/58cqfy
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/-Iberdrola-PTTGlobal-FINAL-pdf/58cqg2
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/ontent-CDL-PTTGlobal-FINAL-pdf/58cqg5
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/-PTTGlobal-Safaricom-FINAL-pdf/58cqg8
+See how companies are reporting on the SDGS,https://info.unglobalcompact.org/l/591891/iona-Ayala-Safaricom-FINAL-pdf/58cqgc
+Blue Bonds Reference Paper,https://info.unglobalcompact.org/l/591891/tainable-Ocean-Investments-pdf/58cqgk
+Ocean Stewardship 2030,https://info.unglobalcompact.org/l/591891/an-Stewardship-2030-Report-pdf/58cqgn
+Seaweed Manifesto,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The-Seaweed-Manifesto.pdf
+Advancing Science for Sustainable Ocean Business,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Advancing-Science-for-Sustainable-Ocean-Business.pdf
+Leadership for the Decade of Action,https://info.unglobalcompact.org/l/591891/-the-Decade-of-Action-2020-pdf/58cqgr
+Leadership for the Decade of Action,https://info.unglobalcompact.org/l/591891/A8E79083E68AA5E5918A-final-pdf/58cqgv
+UN Global Compact 20th-Anniversary Progress Report: Uniting Business in the Decade of Action,https://info.unglobalcompact.org/l/591891/mpact-Progress-Report-2020-pdf/58cqgy
+2020 Pressures Report,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/GCNA-Pressures-Report-2020-WEBpageslow.pdf
+Strengthening Resilience: Acting on Climate Change and Health,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Climate-Change-and-Health-Report.pdf
+Business Guide - Beirut Explosions,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/BeirutPortExplosions-BusinessGuide.pdf
+Sustainable Development Goals: A Guide for Employees,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/2019.11.26_GCNA-SDG-Employees-Guide.pdf
+Navigating Decent Work Challenges in Multi-Tiered Supply Chains: Leadership Brief,https://info.unglobalcompact.org/l/591891/-Tiered-Supply-Chains-2020-pdf/58cqqy
+Blue Resilience Brief,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Towards-a-More-Resilient-and-Sustainable-Blue-Economy.pdf
+Integration Guide: Designing Business Systems for the SDGs,https://info.unglobalcompact.org/l/591891/on-IntegrationGuide-200923-pdf/58cml2
+Integration Guide: Designing Business Systems for the SDGs,https://info.unglobalcompact.org/l/591891/tion-IntegrationGuide-THAI-pdf/58cml5
+Integration Guide: Designing Business Systems for the SDGs,https://info.unglobalcompact.org/l/591891/n-IntegrationGuide-Russian-pdf/58cml8
+Ambition Guide: Setting Goals for the Decade of Action,https://info.unglobalcompact.org/l/591891/mbition-AmbitionGuide-THAI-pdf/58cmlg
+Financial Sector Science -Based Targets Guidance,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Financial-Sector-Science-Based-Targets-Guidance-Pilot-Version.pdf
+Foundations for Science- Based Net- Zero Target Setting in the Corporate Sector,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/foundations-for-net-zero-full-paper.pdf
+Practical Guidance to Issue a Blue Bond,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Practical-Guidance-to-Issue-a-Blue-Bond.pdf
+Family-Friendly Workplaces: Policies and Practices to Advance Decent Work in Global Supply Chains,https://info.unglobalcompact.org/l/591891/ndly-Workplaces28202029-EN-pdf/58cqr2
+Family-Friendly Workplaces: Policies and Practices to Advance Decent Work in Global Supply Chains,https://info.unglobalcompact.org/l/591891/ndly-Workplaces28202029-ES-pdf/58cqr5
+Family-Friendly Workplaces: Policies and Practices to Advance Decent Work in Global Supply Chains,https://info.unglobalcompact.org/l/591891/-Workplaces28202029-Bahasa-pdf/58cqr8
+Family-Friendly Workplaces: Policies and Practices to Advance Decent Work in Global Supply Chains,https://info.unglobalcompact.org/l/591891/ndly-Workplaces28202029-DE-pdf/58cqrc
+Target Gender Equality Newsletter,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/TGE%20Newsletter_October%202020.pdf
+Setting Science-Based Targets,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/SBTi%20Corporate%20Net-Zero%20Standard_Chinese.pdf
+Oil and Gas Practical Guidance for the Sustainable Ocean Principles,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN-Global-Compact-Sustainable-Ocean-Principles-Oil-and-Gas.pdf
+Aquaculture Practical Guidance for the Sustainable Ocean Principles,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN-Global-Compact-Sustainable-Ocean-Principles-%20Aquaculture.pdf
+Ocean Renewable Energy Practical Guidance for the Sustainable Ocean Principles,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN-Global-Compact-Sustainable-Ocean-Principles-Ocean-Renewable-Energy.pdf
+Seaweed Practical Guidance for the Sustainable Ocean Principles,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN%20Global-Compact-Sustainable-Ocean-Principles-Seaweed.pdf
+Fisheries Practical Guidance for the Sustainable Ocean Principles,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/UN%20Global-Compact-Sustainable-Ocean-Principles-Fisheries.pdf.pdf
+Stakeholder Inclusion as an Accelerator for the Sustainable Development Goals,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Global-compact-NL-Stakeholder-Inclusion.FINAL_.pdf
+Closing the SDG Financing Gap in ASEAN: A Sustainable Finance Guide for Corporates,https://info.unglobalcompact.org/l/591891/nance-Guide-for-Corporates-pdf/58cqrg
+Global Opportunity Report Series,https://info.unglobalcompact.org/l/591891/ications-GOE-2019-Insights-pdf/58cqrk
+Global Opportunity Report Series,https://info.unglobalcompact.org/l/591891/al-Opportunity-Report-2018-pdf/58cqrn
+Global Opportunity Report Series,https://info.unglobalcompact.org/l/591891/Opportunity-Report-2017-SM-pdf/58cqrr
+Global Opportunity Report Series,https://info.unglobalcompact.org/l/591891/al-Opportunity-Report-2016-pdf/58cqrv
+Global Opportunity Report Series,https://info.unglobalcompact.org/l/591891/-Global-Opportunity-Report-pdf/58cqry
+Making Global Goals Local Business: Responsible business in the era of the Sustainable Development Goals,https://www.unglobalcompact.org/docs/publications/MGGLB%20Brochure%202019.pdf
+Science-based climate targets as the basis for a corporate climate strategy,https://www.unglobalcompact.org/docs/publications/Discussion-paper-SBT-DGCN_screen_k_neu.pdf
+Business School Rankings for the 21st Century,http://www.unglobalcompact.org/docs/publications/Business-School-Rankings_2019.pdf
+Gender Equality in Social Auditing Guidance,https://www.bsr.org/reports/BSR_Gender_Equality_in_Social_Auditing_Guidance.pdf
+Achieving Decent Work and Inclusive Growth: The Business Case for Social Dialogue,http://globaldeal.azurewebsites.net/wp-content/uploads/2017/09/Thematic-Brief-Achieving-Decent-Work-and-Inclusive-Growth_The-Business-Case-for-Social-Dialogue-2.pdf
+SDG Investment Forum Brazil — Summary Report,https://www.unglobalcompact.org/docs/publications/SDG%20Investment%20Forum%20Brazil%20-%20Meeting%20Summary.pdf
+"Global Goals, Ocean Opportunities",https://info.unglobalcompact.org/l/591891/-Goals-Ocean-Opportunities-pdf/58cqs2
+Corporate Finance | A Roadmap to Mainstream SDG Investments,https://info.unglobalcompact.org/l/591891/orate-Finance-Report-Final-pdf/58cqs5
+Corporate Finance | A Roadmap to Mainstream SDG Investments,https://info.unglobalcompact.org/l/591891/nce-Report-Final2028129-ES-pdf/58cqs8
+SDG Bonds | Leveraging Capital Markets for the SDGs,https://info.unglobalcompact.org/l/591891/SDG-BONDS-REPORT2028129-ES-pdf/58cqsg
+"Business Leadership Brief For Healthy Planet, Healthy People",https://info.unglobalcompact.org/l/591891/ions-2019-HealthReport-Web-pdf/58cqsk
+"Business Leadership Brief For Healthy Planet, Healthy People",https://info.unglobalcompact.org/l/591891/ta-sano-con-personas-sanas-pdf/58cqsn
+UN Global Compact-Accenture Strategy 2019 CEO Study – The Decade to Deliver: A Call to Business Action,https://info.unglobalcompact.org/l/591891/9-UNGC-Accenture-CEO-Study-pdf/58cqsr
+UN Global Compact Progress Report 2019,https://info.unglobalcompact.org/l/591891/-2019-UNGC-Progress-Report-pdf/58cqsv
+Business Leadership for 1.5 °C,https://info.unglobalcompact.org/l/591891/degree-Business-Leadership-pdf/58cqsy
+Can government policies that drive strong economic outcomes for the private sector alleviate poverty?,https://www.unglobalcompact.org/docs/publications/2019_GCNA_Businesses_and_SDG1_in_Asia_Pacific.pdf
+Framework for Corporate Action on Workplace Women's Health and Empowerment,https://info.unglobalcompact.org/l/591891/0Health20Empowerment202019-pdf/58cqt2
+Scaling SDG Finance for the Sustainable Development Goals,https://info.unglobalcompact.org/l/591891/ons-Scaling-SDG-Finance-ES-pdf/58cqvy
+"Climate Change, A Human Rights Issue",https://info.unglobalcompact.org/l/591891/uman-Rights-Issue-Briefing-pdf/58cqw8
+Guide To Setting Site Water Targets Informed By Catchment Context,https://info.unglobalcompact.org/l/591891/ndateSiteWaterTargetsGuide-pdf/58cqwc
+5 Tipping Points for a Healthy and Productive Ocean By 2030,https://info.unglobalcompact.org/l/591891/roductive20Ocean20by202030-pdf/58cqwg
+Navigating the Future of Business and Human Rights: Good Practice Examples,https://info.unglobalcompact.org/l/591891/ting20the20Future20of20BHR-pdf/58cqwk
+Navigating the Future of Business and Human Rights: Good Practice Examples,https://info.unglobalcompact.org/l/591891/sas-y-los-derechos-humanos-pdf/58cqwn
+"Setting Site Water Targets Informed by Catchment Context, CASE STUDY: Santa Ana River Watershed, California",https://ceowatermandate.org/watertargets/wp-content/uploads/sites/30/2019/08/CEOWaterMandateTargetsCaseStudy.pdf
+Raising the Bar: Exploring the Science Based Targets initiative's progress in driving ambitious climate action,http://www.unglobalcompact.org/docs/publications/SBTi-Progress-Report-2019-FINAL.pdf
+"Ending child labour, forced labour and human trafficking in global supply chains",http://www.unglobalcompact.org/docs/publications/Ending-child-labour-forced-labour-and-human-trafficking-in-global-supply-chains.pdf
+Private Sector Forum Meeting Report 2019,https://www.unglobalcompact.org/docs/publications/2019-Private-Sector-Forum-Meeting-Report.pdf
+UN Global Compact Board Meeting Reports,https://unglobalcompact.org/docs/about_the_gc/final_rep_board030806.pdf
+UN Global Compact Logo Policy,http://www.unglobalcompact.org/docs/about_the_gc/logo_policy/Logo_Policy_AR.pdf
+"Better Leadership, Better World",https://www.unglobalcompact.org/docs/publications/2018/WomenRising2030-Better-Leadership-Better-World.pdf
+Transforming Partnerships for the SDGs,https://info.unglobalcompact.org/l/591891/-Partnerships-for-the-SDGs-pdf/58cqwr
+Women's Empowerment Principles Global Trends Report 2018,https://info.unglobalcompact.org/l/591891/18-WEPs-Trends-Report-2018-pdf/58cqwv
+Business: It's Time to Act,https://info.unglobalcompact.org/l/591891/blications-Its-Time-To-Act-pdf/58cqwy
+Business: It's Time to Act,https://info.unglobalcompact.org/l/591891/men-es-ist-Zeit-zu-Handeln-pdf/58cqx2
+Business Partnerships for the Global Goals: Advances in Latin America and the Caribbean,https://www.unglobalcompact.org/docs/publications/mgglb-arg-infographic-flyer-EN.pdf
+Sustainable Development Goal 6: Synthesis Report 2018 on Water and Sanitation,http://www.unglobalcompact.org/docs/publications/SDG6_SR2018.pdf
+Global Compact Local Networks: Accelerating National SDG Implementation,https://www.unglobalcompact.org/docs/publications/GCLNs-Accelerating_National-SDG-Implementation.pdf
+Global Compact Local Networks: Accelerating National SDG Implementation,https://www.unglobalcompact.org/docs/publications/GCLNs-Accelerating_National-SDG-Implementation.pdf
+Promoting Anti-Corruption Collective Action through Global Compact Local Networks – Second Edition,https://www.unglobalcompact.org/docs/publications/UN_Anti_Corruption_Brochure-2018.pdf
+Promoting Anti-Corruption Collective Action through Global Compact Local Networks – Second Edition,https://www.unglobalcompact.org/docs/publications/UN_Anti_Corruption_Brochure-2018.pdf
+Decent Work in Global Supply Chains — A Baseline Report,https://info.unglobalcompact.org/l/591891/y-Chains-UN-Global-Compact-pdf/58cqx5
+UN Global Compact Progress Report 2018,https://info.unglobalcompact.org/l/591891/mpact-Progress-Report-2018-pdf/58cqx8
+Building Peace and Prosperity: What Business Can Do,https://info.unglobalcompact.org/l/591891/erity-What-Business-Can-Do-pdf/58cqxg
+"Action Platform for Peace, Justice and Strong Institutions Flyer",http://www.unglobalcompact.org/docs/publications/ActionPlatform_Launch_Flyer.pdf
+Human Rights: The Foundation of Sustainable Business,https://info.unglobalcompact.org/l/591891/on-of-Sustainable-Business-pdf/58cqxk
+The Ambition Loop — How Business and Government Can Advance Policies that Fast Track Zero-Carbon Economic Growth,https://info.unglobalcompact.org/l/591891/bition-Loop-Report---FINAL-pdf/58cqzc
+The Ambition Loop — How Business and Government Can Advance Policies that Fast Track Zero-Carbon Economic Growth,https://info.unglobalcompact.org/l/591891/op-Summary-for-Leaders--1--pdf/58cqzg
+Internal carbon pricing in companies — Preparing for future regulation and designing the transition to a <2°C economy,https://ungc-communications-assets.s3.amazonaws.com/docs/publications/Discussion-paper-SBT-DGCN_screen_k_neu.pdf
+"Climate and Supply Chain, The Business Case for Action",https://www.bsr.org/reports/BSR_Climate_and_Supply_Chain_Management.pdf
+"Climate and Inclusive Economy, The Business Case for Action",https://www.bsr.org/reports/BSR_Climate_Nexus_Inclusive_Economy.pdf
+"Resilient Business, Resilient World: A Framework for Private-Sector Leadership on Climate Adaptation",https://www.bsr.org/reports/BSR_Resilient_Business_Resilient_World_A_Research_Framework_for_Private_Sector_Leadership_on_Climate_Adaptation.pdf
+"Climate and Health, The Business Case for Action",https://www.bsr.org/reports/BSR_Climate_Nexus_Health.pdf
+Empowering Female Workers in the Apparel Industry,https://www.bsr.org/reports/BSR_Empowering_Female_Workers_in_the_Apparel_Industry.pdf
+Private-Sector Action for Women's Health and Empowerment,https://www.bsr.org/reports/Private_Sector_Action_For_Womens_Health_Empowerment_Brief.pdf
+Mapping Ocean Governance and Regulation — Working Paper for consultation,https://info.unglobalcompact.org/l/591891/-Governance-and-Regulation-pdf/58cqzk
+"Better Business, Better World",https://unglobalcompact.org/docs/news_events/9.3/better-business-better-world.pdf
+"SDG Industry Matrix: Energy, Natural Resources and Chemicals",http://www.unglobalcompact.org/docs/publications/2017/SDG-industry-matrix-enrc.pdf
+Global Opportunity Report 2017,http://www.unglobalcompact.org/docs/publications/Global_Opportunity_Report_2017_SM.pdf
+Relations with the Private Sector from the Oxford Handbook of International Organisations,https://www.unglobalcompact.org/docs/publications/2017/Oxford-Handbook-International-Organisations-Georg-Kell-Jan17.pdf
+Guidance for Global Compact Local Networks on National Action Plans on Business and Human Rights,https://www.unglobalcompact.org/docs/issues_doc/human_rights/Resources/GCLN-NAP-HR-Guidance.pdf
+"Business Guide to Prevent Famine and Support Response in North-East Nigeria, South Sudan, Yemen and Somalia",http://www.unglobalcompact.org/docs/publications/Business_Guide_for_Four_Famines.pdf
+Sustainable Development Goals: From Promise to Practice,http://www.unglobalcompact.org/docs/publications/UNA-UK%20SDGS%202017.pdf
+Aligning Values: Why corporate pension plans should mirror their sponsors,https://www.unglobalcompact.org/docs/publications/Aligning_Values-Why_corporate_pension_plans_should_mirror_their_sponsors_final.pdf
+Statements of the UN Global Compact on the Integrity Measures,https://www.unglobalcompact.org/docs/publications/UN_Global_Compact_Statement_16%20May_2017.pdf
+Human Rights Translated 2.0,https://www.unglobalcompact.org/docs/publications/HRT_final_web.pdf
+Human Rights Good Practice for Business Operating in Areas with Violent Crime,https://www.unglobalcompact.org/docs/publications/Violent_Crime_GPN_final.pdf
+Addressing Adverse Human Rights Impacts Connected to Product Misuse,https://www.unglobalcompact.org/docs/publications/Product_Misuse_GPN_final.pdf
+Guide for Business on the Rights of Persons with Disabilities,https://www.unglobalcompact.org/docs/publications/Accessible_Disabilities_Guide.pdf
+Decent Work and the 2030 Agenda for Sustainable Development,https://www.unglobalcompact.org/docs/publications/Decent_Work_and_the_2030_Agenda.pdf
+2017 United Nations Global Compact Progress Report: Business Solutions to Sustainable Development,https://www.unglobalcompact.org/docs/publications/UN%20Impact%20Brochure_Concept-FINAL.pdf
+Blueprint for Business Leadership on the SDGs,http://www.unglobalcompact.org/docs/publications/Blueprint-for-Business-Leadership-on-the-SDGs.pdf
+"Tackling Discrimination against Lesbian, Gay, Bi, Trans, & Intersex People STANDARDS OF CONDUCT FOR BUSINESS",https://www.unglobalcompact.org/docs/publications/UN_Brochure_single_pages.pdf
+A Call to Action for Sustainable Business,http://www.unglobalcompact.org/docs/publications/UNGC-Value-Proposition.pdf
+2030 Vision: Uniting to Deliver Technology for the Global Goals,http://www.unglobalcompact.org/docs/publications/ARM_2030VisionReport.pdf
+The Breakthrough Pitch,http://www.unglobalcompact.org/docs/publications/guide-breakthrough-pitch.pdf
+"Guide to Unlocking Prosperity: Finance, Investment and Sustainable Development",https://www.unglobalcompact.org/docs/news_events/PSF2017/unga-finance-flyer-print.pdf
+Global Climate Action Playbook 2018,https://www.unglobalcompact.org/docs/issues_doc/Environment/climate/Global-Climate-Action-Playbook-2018.pdf
+Uniting to Deliver Technology for the Global Goals: Full Report,https://www.unglobalcompact.org/docs/publications/2017/2030Vision_Report.pdf
+Gender Equality in Codes of Conduct Guidance,https://www.bsr.org/reports/BSR_Gender_Equality_in_Codes_of_Conduct_Guidance.pdf
+The Five Levels of an Ethical Culture,https://www.bsr.org/reports/BSR_Ethical_Corporate_Culture_Five_Levels.pdf
+"Big Brands, Big Impact: A Marketer's Guide to Behavior Change",https://www.bsr.org/reports/BSR_SLFG_Marketers_Guide_to_Behavior_Change.pdf
+The Supply Chain Leadership Ladder,https://www.bsr.org/reports/BSR_Supply_Chain_Leadership_Ladder_2017.pdf
+Automation: A Framework for a Sustainable Transition,https://www.bsr.org/reports/BSR_Automation_Sustainable_Jobs_Business_Transition.pdf
+"Climate and Women, The Business Case for Action",https://www.bsr.org/reports/BSR_Climate_Nexus_Women.pdf
+UNGC 2020 Global Strategy,http://www.unglobalcompact.org/docs/about_the_gc/UNGC-2020-Global-Strategy.pdf
+Fighting Corruption in the Supply Chain: A Guide for Customers and Suppliers,http://www.unglobalcompact.org/docs/issues_doc/Anti-Corruption/Fighting_Corruption_Supply_Chain.pdf
+UN Global Compact Annual Local Network Report Series,https://www.unglobalcompact.org/docs/publications/LN_Report_2015.pdf
+Caring for Climate Progress Report Series,https://unglobalcompact.org/docs/issues_doc/Environment/climate/C4C-progress-report-2016.pdf
+UN Global Compact Financial Reports,http://globalcompactfoundation.org/docs/2012_ungc_financial_report.pdf
+Summary Report: 2015 Caring for Climate Business Forum at COP21,https://www.unglobalcompact.org/docs/issues_doc/Environment/climate/C4C-business-forum-2016-meeting-report.pdf
+ILO-IOE Child Labour Guidance Tool for Business,https://www.unglobalcompact.org/docs/issues_doc/labour/tools_guidance_materials/ILO-IOE-child-labour-guidance.pdf
+"SDG Industry Matrix: Food, Beverage & Consumer Goods",https://unglobalcompact.org/docs/issues_doc/development/SDGMatrix-ConsumerGoods.pdf
+SDG Industry Matrix: Financial Services,https://www.unglobalcompact.org/docs/issues_doc/development/SDGMatrix_FinancialSvcs.pdf
+Business and Responsible Taxation,https://unglobalcompact.org/docs/issues_doc/human_rights/Webinars/responsible-taxation-business.pdf
+Principles for Sustainable Soil Management,https://unglobalcompact.org/docs/issues_doc/agriculture_and_food/soil-principles.pdf
+Traceability Technical Solutions for the Apparel Sector,https://unglobalcompact.org/docs/issues_doc/supply_chain/Traceability/webinar-technical-solutions-apparel-sector.pdf
+The UK Modern Slavery Act: Implications for Global Compact Participants,https://unglobalcompact.org/docs/issues_doc/human_rights/Webinars/modern-slavery-act-implications.pdf
+Integrating Human Rights Considerations into Mergers & Acquisitions,https://unglobalcompact.org/docs/issues_doc/human_rights/Webinars/ma-human-rights.pdf
