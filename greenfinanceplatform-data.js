@@ -1,6 +1,61 @@
 import { createObjectCsvWriter } from 'csv-writer';
 import puppeteer from 'puppeteer';
 
+async function processPage(pageIndex, csvWriter, pdfCsvWriter, browser) {
+  const page = await browser.newPage();
+  await page.goto(`https://www.greenfinanceplatform.org/financial-measures/browse?page=${pageIndex}`, { waitUntil: 'networkidle0' });
+  await page.waitForSelector('div.views-row');
+
+  const policies = await page.evaluate(() => {
+    const items = Array.from(document.querySelectorAll('div.views-row'));
+    return items.map(item => {
+      const year = item.querySelector('div.list-date time')?.innerText;
+      const titleElement = item.querySelector('div.list-title a');
+      const title = titleElement?.innerText;
+      const link = titleElement?.getAttribute('href');
+      const imageUrl = item.querySelector('div.flag-img img')?.getAttribute('src');
+      const institutions = item.querySelector('div.list-meta-info.case-study-organisation')?.innerText;
+      const country = item.querySelectorAll('div.list-meta-info.case-study-organisation')[1]?.innerText;
+      const description = item.querySelector('div.list-body')?.innerText;
+
+      return {
+        year,
+        title,
+        link: link ? `https://www.greenfinanceplatform.org${link}` : null,
+        imageUrl: imageUrl ? `https://www.greenfinanceplatform.org${imageUrl}` : null,
+        institutions,
+        country,
+        description,
+      };
+    });
+  });
+
+  for (const policy of policies) {
+    const policyPage = await browser.newPage();
+    if (policy.link) {
+      await policyPage.goto(policy.link, { waitUntil: 'networkidle0' });
+      
+      const pdfLinks = await policyPage.evaluate(() => {
+        const links = Array.from(document.querySelectorAll('a'));
+        return links.filter(a => a.href.includes('.pdf')).map(a => a.href);
+      });
+
+      policy.pdfLinks = pdfLinks;
+
+      // Escreve cada política individualmente no CSV
+      await csvWriter.writeRecords([policy]);
+
+      for (const link of pdfLinks) {
+        // Escreve cada link PDF individualmente no CSV
+        await pdfCsvWriter.writeRecords([{ title: policy.title, pdfLink: link }]);
+      }
+    }
+    await policyPage.close();
+  }
+
+  await page.close();
+}
+
 (async () => {
   const browser = await puppeteer.launch({ headless: false });
 
@@ -27,59 +82,15 @@ import puppeteer from 'puppeteer';
     ]
   });
 
-  for (let pageIndex = 0; pageIndex < 77; pageIndex++) {
-    const page = await browser.newPage();
-    await page.goto(`https://www.greenfinanceplatform.org/financial-measures/browse?page=${pageIndex}`, { waitUntil: 'networkidle0' });
-    await page.waitForSelector('div.views-row');
+  // Número de páginas a serem processadas simultaneamente
+  const CONCURRENT_PAGES = 5;
 
-    const policies = await page.evaluate(() => {
-      const items = Array.from(document.querySelectorAll('div.views-row'));
-      return items.map(item => {
-        const year = item.querySelector('div.list-date time')?.innerText;
-        const titleElement = item.querySelector('div.list-title a');
-        const title = titleElement?.innerText;
-        const link = titleElement?.getAttribute('href');
-        const imageUrl = item.querySelector('div.flag-img img')?.getAttribute('src');
-        const institutions = item.querySelector('div.list-meta-info.case-study-organisation')?.innerText;
-        const country = item.querySelectorAll('div.list-meta-info.case-study-organisation')[1]?.innerText;
-        const description = item.querySelector('div.list-body')?.innerText;
-
-        return {
-          year,
-          title,
-          link: link ? `https://www.greenfinanceplatform.org${link}` : null,
-          imageUrl: imageUrl ? `https://www.greenfinanceplatform.org${imageUrl}` : null,
-          institutions,
-          country,
-          description,
-        };
-      });
-    });
-
-    for (const policy of policies) {
-      const policyPage = await browser.newPage();
-      if (policy.link) {
-        await policyPage.goto(policy.link, { waitUntil: 'networkidle0' });
-        
-        const pdfLinks = await policyPage.evaluate(() => {
-          const links = Array.from(document.querySelectorAll('a'));
-          return links.filter(a => a.href.includes('.pdf')).map(a => a.href);
-        });
-
-        policy.pdfLinks = pdfLinks;
-
-        // Escreve cada política individualmente no CSV
-        await csvWriter.writeRecords([policy]);
-
-        for (const link of pdfLinks) {
-          // Escreve cada link PDF individualmente no CSV
-          await pdfCsvWriter.writeRecords([{ title: policy.title, pdfLink: link }]);
-        }
-      }
-      await policyPage.close();
+  for (let pageIndex = 0; pageIndex < 77; pageIndex += CONCURRENT_PAGES) {
+    const promises = [];
+    for (let i = 0; i < CONCURRENT_PAGES && (pageIndex + i) < 77; i++) {
+      promises.push(processPage(pageIndex + i, csvWriter, pdfCsvWriter, browser));
     }
-
-    await page.close();
+    await Promise.all(promises);
   }
 
   await browser.close();
