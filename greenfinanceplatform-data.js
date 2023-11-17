@@ -33,21 +33,24 @@ async function processPage(pageIndex, csvWriter, pdfCsvWriter, browser) {
   for (const policy of policies) {
     const policyPage = await browser.newPage();
     if (policy.link) {
-      await policyPage.goto(policy.link, { waitUntil: 'networkidle0' });
-      
-      const pdfLinks = await policyPage.evaluate(() => {
-        const links = Array.from(document.querySelectorAll('a'));
-        return links.filter(a => a.href.includes('.pdf')).map(a => a.href);
-      });
+      if (policy.link.includes('.pdf')) {
+        // Se o link termina com .pdf, salva diretamente
+        await pdfCsvWriter.writeRecords([{ title: policy.title, pdfLink: policy.link }]);
+        
+      } else {
+        // Caso contrário, entra na página da política e procura por links de PDF
+        await policyPage.goto(policy.link, { waitUntil: 'networkidle0' });
+        
+        const pdfLinks = await policyPage.evaluate(() => {
+          const links = Array.from(document.querySelectorAll('a'));
+          return links.filter(a => a.href.includes('.pdf')).map(a => a.href);
+        });
 
-      policy.pdfLinks = pdfLinks;
-
-      // Escreve cada política individualmente no CSV
-      await csvWriter.writeRecords([policy]);
-
-      for (const link of pdfLinks) {
-        // Escreve cada link PDF individualmente no CSV
-        await pdfCsvWriter.writeRecords([{ title: policy.title, pdfLink: link }]);
+        for (const pdfLink of pdfLinks) {
+          // Escreve cada link PDF individualmente no CSV
+          await pdfCsvWriter.writeRecords([{ title: policy.title, pdfLink: pdfLink }]);
+          console.log("PDF SALVO");
+        }
       }
     }
     await policyPage.close();
