@@ -13,29 +13,29 @@ import puppeteer from 'puppeteer';
     // Abre uma nova página
     const page = await browser.newPage();
 
-    // Inicializa um array para guardar todos os hrefs
-    let allHrefs = [];
+    // Inicializa um array para guardar os hrefs e textos
+    let allLinks = [];
 
-    // Loop para iterar pelas páginas de 1 a 16 e coletar os links
+    // Loop para iterar pelas páginas e coletar os links e textos
     for (let i = 1; i <= 16; i++) {
-        // URL da página
         const url = `https://eur-lex.europa.eu/search.html?SUBDOM_INIT=ALL_ALL&textScope0=ti-te&orText1=nfrd&textScope1=ti-te&lang=en&type=advanced&qid=1700493741622&andText0=csrd&page=${i}`;
         await page.goto(url, { waitUntil: 'networkidle0' });
         
-        // Extrai os hrefs
-        const hrefs = await page.evaluate(() => {
-            const links = Array.from(document.querySelectorAll('.SearchResult h2 a'));
-            return links.map(link => link.href);
+        const links = await page.evaluate(() => {
+            return Array.from(document.querySelectorAll('.SearchResult h2 a')).map(link => ({
+                href: link.href,
+                text: link.textContent.trim()
+            }));
         });
 
-        allHrefs.push(...hrefs);
+        allLinks.push(...links);
     }
 
-    // Array para armazenar os links PDF de cada página
-    let allPdfLinks = [];
+    // Array para armazenar os dados dos PDFs
+    let allPdfData = [];
 
     // Loop para visitar cada link coletado
-    for (const href of allHrefs) {
+    for (const { href, text } of allLinks) {
         try {
             console.log(`Tentando acessar: ${href}`);
             await page.goto(href, { waitUntil: 'networkidle0' });
@@ -47,7 +47,7 @@ import puppeteer from 'puppeteer';
 
             if (pdfLinkEN) {
                 console.log(`Origem: ${href} - PDF link coletado (EN): ${pdfLinkEN}`);
-                allPdfLinks.push(pdfLinkEN);
+                allPdfData.push({ href: pdfLinkEN, text });
             }
 
             const pdfLinkFR = await page.evaluate(() => {
@@ -57,7 +57,7 @@ import puppeteer from 'puppeteer';
 
             if (pdfLinkFR) {
                 console.log(`Origem: ${href} - PDF link coletado (FR): ${pdfLinkFR}`);
-                allPdfLinks.push(pdfLinkFR);
+                allPdfData.push({ href: pdfLinkFR, text });
             }
         } catch (error) {
             console.error(`Erro ao acessar: ${href}`, error);
@@ -67,8 +67,8 @@ import puppeteer from 'puppeteer';
     // Fecha o navegador
     await browser.close();
 
-    // Converter os links para formato CSV
-    const csvContent = allPdfLinks.map(link => `"${link}"`).join('\n');
+    // Converter os dados para formato CSV
+    const csvContent = allPdfData.map(({ href, text }) => `"${text}","${href}"`).join('\n');
 
     // Escrever os dados em um arquivo CSV
     fs.writeFileSync('pdf-links/eur-lex.csv', csvContent);
